@@ -1,5 +1,5 @@
-const CACHE_NAME = "appclimatizacao-v5";
-const APP_BASE = "/APPclimatizacao";
+const CACHE_NAME = "Testes-antes-do-app-v5";
+const APP_BASE = "/Testes-antes-do-app";
 
 const STATIC_ASSETS = [
   `${APP_BASE}/`,
