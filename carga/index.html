@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Carga térmica</title>
+  <style>
+    :root{
+      --bg:#f3f6fb;
+      --card:#ffffff;
+      --text:#111827;
+      --muted:#6b7280;
+      --line:#e5e7eb;
+      --brand:#1f6feb;
+      --brand-strong:#0b5ed7;
+      --shadow:0 10px 30px rgba(17,24,39,.08);
+      --radius:18px;
+      --soft:#eaf2ff;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      padding:20px;
+      background:var(--bg);
+      color:var(--text);
+      font-family:Arial, Helvetica, sans-serif;
+    }
+    .wrap{
+      max-width:860px;
+      margin:0 auto;
+    }
+    .card{
+      background:var(--card);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      padding:18px;
+    }
+    h1{
+      margin:0 0 6px;
+      font-size:28px;
+      text-align:center;
+    }
+    .sub{
+      color:var(--muted);
+      text-align:center;
+      margin:0 0 18px;
+      font-size:14px;
+    }
+    .grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:14px;
+    }
+    .full{grid-column:1 / -1}
+    @media (max-width:720px){
+      .grid{grid-template-columns:1fr}
+      .full{grid-column:auto}
+    }
+    label{
+      display:block;
+      font-weight:bold;
+      margin:0 0 6px;
+    }
+    input, select{
+      width:100%;
+      border:1px solid var(--line);
+      border-radius:12px;
+      padding:12px 14px;
+      font-size:16px;
+      background:#fff;
+      color:var(--text);
+      outline:none;
+    }
+    input:focus, select:focus{
+      border-color:var(--brand);
+    }
+    .row-actions{
+      display:flex;
+      gap:12px;
+      margin-top:16px;
+      flex-wrap:wrap;
+    }
+    button{
+      border:none;
+      border-radius:14px;
+      padding:14px 18px;
+      font-size:16px;
+      cursor:pointer;
+      font-weight:bold;
+    }
+    .btn-primary{
+      background:var(--brand);
+      color:#fff;
+      flex:1 1 220px;
+    }
+    .btn-primary:hover{background:var(--brand-strong)}
+    .btn-secondary{
+      background:#fff;
+      border:1px solid var(--line);
+      color:var(--text);
+      flex:1 1 220px;
+    }
+    .result{
+      margin-top:18px;
+      background:var(--soft);
+      border-radius:16px;
+      padding:18px;
+      display:none;
+    }
+    .kpi{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:14px;
+      margin-top:12px;
+    }
+    @media (max-width:600px){
+      .kpi{grid-template-columns:1fr}
+    }
+    .mini{
+      background:#fff;
+      border-radius:14px;
+      padding:14px;
+      border:1px solid #dbe7ff;
+    }
+    .mini .label{
+      font-size:13px;
+      color:var(--muted);
+      margin-bottom:6px;
+    }
+    .mini .value{
+      font-size:24px;
+      font-weight:bold;
+    }
+    .list{
+      margin:12px 0 0;
+      padding-left:18px;
+    }
+    .obs{
+      margin-top:12px;
+      font-size:14px;
+      color:var(--muted);
+      line-height:1.45;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Carga térmica</h1>
+      <p class="sub">Estimativa rápida para orçamento de ambiente residencial ou comercial leve.</p>
+
+      <div class="grid">
+        <div>
+          <label for="largura">Largura do ambiente (m)</label>
+          <input id="largura" type="number" min="0" step="0.1" placeholder="Ex: 4">
+        </div>
+
+        <div>
+          <label for="comprimento">Comprimento do ambiente (m)</label>
+          <input id="comprimento" type="number" min="0" step="0.1" placeholder="Ex: 5">
+        </div>
+
+        <div>
+          <label for="altura">Altura do teto (m)</label>
+          <input id="altura" type="number" min="2" step="0.1" value="2.7">
+        </div>
+
+        <div>
+          <label for="ambiente">Tipo do ambiente</label>
+          <select id="ambiente">
+            <option value="0">Quarto / sala / escritório leve</option>
+            <option value="600">Loja / escritório com uso moderado</option>
+            <option value="1200">Cozinha / área com carga maior</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="pessoas">Quantidade de pessoas</label>
+          <input id="pessoas" type="number" min="1" step="1" value="1">
+        </div>
+
+        <div>
+          <label for="eletronicos">Eletrônicos / equipamentos ligados</label>
+          <input id="eletronicos" type="number" min="0" step="1" value="0">
+        </div>
+
+        <div>
+          <label for="janelas">Quantidade de janelas</label>
+          <input id="janelas" type="number" min="0" step="1" value="0">
+        </div>
+
+        <div>
+          <label for="sol">Incidência de sol</label>
+          <select id="sol">
+            <option value="0">Baixa</option>
+            <option value="800">Média</option>
+            <option value="1500">Alta</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="andar">Ambiente em andar superior / cobertura?</label>
+          <select id="andar">
+            <option value="0">Não</option>
+            <option value="1000">Sim</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="vidro">Tem parede / porta de vidro grande?</label>
+          <select id="vidro">
+            <option value="0">Não</option>
+            <option value="1200">Sim</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row-actions">
+        <button class="btn-primary" onclick="calcular()">Calcular BTU</button>
+        <button class="btn-secondary" onclick="limparCampos()">Limpar</button>
+      </div>
+
+      <div class="result" id="resultado">
+        <div class="kpi">
+          <div class="mini">
+            <div class="label">Área do ambiente</div>
+            <div class="value" id="areaValor">0 m²</div>
+          </div>
+          <div class="mini">
+            <div class="label">Carga estimada</div>
+            <div class="value" id="btuValor">0 BTU</div>
+          </div>
+        </div>
+
+        <div class="mini" style="margin-top:14px">
+          <div class="label">Capacidade recomendada</div>
+          <div class="value" id="capacidadeValor">-</div>
+        </div>
+
+        <ul class="list" id="detalhes"></ul>
+
+        <div class="obs">
+          Este cálculo é uma estimativa rápida para orçamento. Em ambientes com muitas pessoas, insolação forte, cozinha,
+          vidro excessivo, teto alto ou uso comercial pesado, vale confirmar o dimensionamento final antes da instalação.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function moedaNumero(v){
+      return new Intl.NumberFormat('pt-BR').format(v);
+    }
+
+    function sugestaoCapacidade(btu){
+      const faixas = [9000, 12000, 18000, 24000, 30000, 36000, 48000, 60000];
+      for(const f of faixas){
+        if(btu <= f) return `${f.toLocaleString('pt-BR')} BTU`;
+      }
+      return 'Acima de 60.000 BTU';
+    }
+
+    function calcular(){
+      const largura = Number(document.getElementById('largura').value || 0);
+      const comprimento = Number(document.getElementById('comprimento').value || 0);
+      const altura = Number(document.getElementById('altura').value || 0);
+      const pessoas = Number(document.getElementById('pessoas').value || 1);
+      const eletronicos = Number(document.getElementById('eletronicos').value || 0);
+      const janelas = Number(document.getElementById('janelas').value || 0);
+      const ambiente = Number(document.getElementById('ambiente').value || 0);
+      const sol = Number(document.getElementById('sol').value || 0);
+      const andar = Number(document.getElementById('andar').value || 0);
+      const vidro = Number(document.getElementById('vidro').value || 0);
+
+      if(!largura || !comprimento){
+        alert('Preencha largura e comprimento do ambiente.');
+        return;
+      }
+
+      const area = largura * comprimento;
+
+      let btuBase = area * 600;
+      let adicionalPessoas = Math.max(0, pessoas - 1) * 600;
+      let adicionalEletronicos = eletronicos * 600;
+      let adicionalJanelas = janelas * 450;
+      let adicionalAltura = altura > 2.7 ? Math.round(area * (altura - 2.7) * 120) : 0;
+
+      let total = Math.round(
+        btuBase +
+        adicionalPessoas +
+        adicionalEletronicos +
+        adicionalJanelas +
+        adicionalAltura +
+        ambiente +
+        sol +
+        andar +
+        vidro
+      );
+
+      document.getElementById('resultado').style.display = 'block';
+      document.getElementById('areaValor').textContent = `${area.toFixed(1).replace('.', ',')} m²`;
+      document.getElementById('btuValor').textContent = `${moedaNumero(total)} BTU`;
+      document.getElementById('capacidadeValor').textContent = sugestaoCapacidade(total);
+
+      const detalhes = [
+        `Base pela área: ${moedaNumero(Math.round(btuBase))} BTU`,
+        `Pessoas adicionais: ${moedaNumero(Math.round(adicionalPessoas))} BTU`,
+        `Eletrônicos/equipamentos: ${moedaNumero(Math.round(adicionalEletronicos))} BTU`,
+        `Janelas: ${moedaNumero(Math.round(adicionalJanelas))} BTU`,
+        `Altura do teto: ${moedaNumero(Math.round(adicionalAltura))} BTU`,
+        `Tipo de ambiente: ${moedaNumero(Math.round(ambiente))} BTU`,
+        `Insolação: ${moedaNumero(Math.round(sol))} BTU`,
+        `Andar superior/cobertura: ${moedaNumero(Math.round(andar))} BTU`,
+        `Vidro grande: ${moedaNumero(Math.round(vidro))} BTU`
+      ];
+
+      document.getElementById('detalhes').innerHTML = detalhes
+        .map(item => `<li>${item}</li>`)
+        .join('');
+    }
+
+    function limparCampos(){
+      document.getElementById('largura').value = '';
+      document.getElementById('comprimento').value = '';
+      document.getElementById('altura').value = '2.7';
+      document.getElementById('ambiente').value = '0';
+      document.getElementById('pessoas').value = '1';
+      document.getElementById('eletronicos').value = '0';
+      document.getElementById('janelas').value = '0';
+      document.getElementById('sol').value = '0';
+      document.getElementById('andar').value = '0';
+      document.getElementById('vidro').value = '0';
+      document.getElementById('resultado').style.display = 'none';
+    }
+  </script>
+</body>
+</html>

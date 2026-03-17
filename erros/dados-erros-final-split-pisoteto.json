@@ -1,0 +1,4499 @@
+[
+  {
+    "marca": "Philco",
+    "linha": "Inverter",
+    "codigo": "E1",
+    "significado": "Falha de comunicação entre unidade interna e externa",
+    "causas": [
+      "Cabo de comunicação rompido ou invertido",
+      "Conector solto entre evaporadora e condensadora",
+      "Placa eletrônica da evaporadora com falha",
+      "Placa eletrônica da condensadora com falha"
+    ],
+    "diagnostico": [
+      "Verificar continuidade do cabo de comunicação",
+      "Confirmar polaridade correta dos fios",
+      "Conferir conectores nas placas",
+      "Medir tensão de comunicação entre as unidades"
+    ],
+    "teste_rapido": [
+      "Reapertar conectores do cabo de comunicação",
+      "Desligar energia por 5 minutos e reiniciar sistema"
+    ],
+    "dica": "Erro comum após instalação ou manutenção onde o cabo foi invertido",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Philco",
+    "linha": "Inverter",
+    "codigo": "E2",
+    "significado": "Falha no sensor de temperatura da serpentina da evaporadora",
+    "causas": [
+      "Sensor de serpentina aberto",
+      "Sensor em curto",
+      "Chicote do sensor rompido",
+      "Falha na placa eletrônica"
+    ],
+    "diagnostico": [
+      "Localizar sensor na serpentina da evaporadora",
+      "Medir resistência do sensor",
+      "Verificar chicote até a placa",
+      "Comparar resistência com tabela do sensor"
+    ],
+    "teste_rapido": [
+      "Desconectar sensor e medir com multímetro",
+      "Substituir temporariamente por sensor equivalente"
+    ],
+    "dica": "Sensores geralmente são NTC de 10k",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Philco",
+    "linha": "Inverter",
+    "codigo": "E3",
+    "significado": "Proteção de baixa pressão ou falta de refrigerante",
+    "causas": [
+      "Falta de gás refrigerante",
+      "Vazamento no sistema",
+      "Filtro capilar parcialmente obstruído",
+      "Sensor de pressão com defeito"
+    ],
+    "diagnostico": [
+      "Verificar pressão do sistema com manifold",
+      "Inspecionar possíveis vazamentos",
+      "Checar sensor de pressão",
+      "Conferir funcionamento do compressor"
+    ],
+    "teste_rapido": [
+      "Verificar gelo na evaporadora",
+      "Medir pressão de sucção"
+    ],
+    "dica": "Erro comum quando há vazamento ou instalação com carga incorreta",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Philco",
+    "linha": "Inverter",
+    "codigo": "E5",
+    "significado": "Proteção de sobrecorrente do compressor",
+    "causas": [
+      "Compressor travado",
+      "Placa inverter com defeito",
+      "Baixa tensão de alimentação",
+      "Curto no compressor"
+    ],
+    "diagnostico": [
+      "Medir corrente do compressor",
+      "Verificar tensão de alimentação",
+      "Testar enrolamentos do compressor",
+      "Verificar placa inverter"
+    ],
+    "teste_rapido": [
+      "Desligar equipamento e aguardar 5 minutos",
+      "Reiniciar sistema e observar corrente de partida"
+    ],
+    "dica": "Pode ocorrer quando a rede elétrica está com tensão baixa",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Philco",
+    "linha": "Inverter",
+    "codigo": "E6",
+    "significado": "Falha no motor ventilador da unidade interna (evaporadora)",
+    "causas": [
+      "Motor ventilador travado ou danificado",
+      "Capacitor do motor defeituoso",
+      "Conexões elétricas soltas ou oxidadas",
+      "Falha na placa eletrônica"
+    ],
+    "diagnostico": [
+      "Verificar se a turbina gira livremente",
+      "Conferir cabos do motor na placa",
+      "Testar capacitor com capacímetro",
+      "Medir tensão chegando ao motor",
+      "Testar bobinas do motor",
+      "Se motor estiver bom verificar placa"
+    ],
+    "teste_rapido": [
+      "Girar turbina manualmente",
+      "Medir tensão no motor"
+    ],
+    "dica": "Erro comum quando a turbina está travada por sujeira",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Britania",
+    "linha": "Inverter",
+    "codigo": "E1",
+    "significado": "Falha de comunicação entre unidades",
+    "causas": [
+      "Cabo de comunicação rompido",
+      "Conector solto",
+      "Placa da evaporadora com defeito",
+      "Placa da condensadora com defeito"
+    ],
+    "diagnostico": [
+      "Verificar continuidade do cabo",
+      "Conferir polaridade dos fios",
+      "Verificar conectores nas placas"
+    ],
+    "teste_rapido": [
+      "Desligar energia e reiniciar",
+      "Reapertar conectores"
+    ],
+    "dica": "Erro comum após manutenção",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Midea",
+    "linha": "Inverter",
+    "codigo": "E0",
+    "significado": "Erro EEPROM da placa principal",
+    "causas": [
+      "Falha na memória EEPROM da placa",
+      "Corrupção de dados após queda de energia",
+      "Defeito na placa eletrônica"
+    ],
+    "diagnostico": [
+      "Desligar equipamento da rede por alguns minutos",
+      "Reenergizar e observar se erro retorna",
+      "Verificar tensão de alimentação da placa",
+      "Substituir placa caso erro persista"
+    ],
+    "teste_rapido": [
+      "Desligar energia por 5 minutos",
+      "Ligar novamente e verificar se erro reaparece"
+    ],
+    "dica": "Erro geralmente relacionado à memória da placa eletrônica",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Midea",
+    "linha": "Inverter",
+    "codigo": "E1",
+    "significado": "Falha de comunicação entre evaporadora e condensadora",
+    "causas": [
+      "Cabo de comunicação rompido",
+      "Fios invertidos",
+      "Conector solto",
+      "Placa de uma das unidades com defeito"
+    ],
+    "diagnostico": [
+      "Verificar continuidade do cabo de comunicação",
+      "Conferir polaridade dos fios",
+      "Inspecionar conectores nas placas",
+      "Medir tensão de comunicação"
+    ],
+    "teste_rapido": [
+      "Reapertar conectores",
+      "Desligar e religar o equipamento"
+    ],
+    "dica": "Erro comum após instalação incorreta",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Midea",
+    "linha": "Inverter",
+    "codigo": "E2",
+    "significado": "Falha no sensor de temperatura ambiente",
+    "causas": [
+      "Sensor NTC aberto",
+      "Sensor em curto",
+      "Chicote danificado",
+      "Placa com defeito"
+    ],
+    "diagnostico": [
+      "Localizar sensor ambiente na evaporadora",
+      "Medir resistência do sensor",
+      "Verificar chicote até a placa",
+      "Comparar com tabela do sensor"
+    ],
+    "teste_rapido": [
+      "Medir sensor com multímetro",
+      "Substituir sensor para teste"
+    ],
+    "dica": "Sensores geralmente NTC 10k",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Midea",
+    "linha": "Inverter",
+    "codigo": "E3",
+    "significado": "Falha no ventilador da unidade interna",
+    "causas": [
+      "Motor ventilador travado",
+      "Capacitor defeituoso",
+      "Placa sem acionamento",
+      "Chicote do motor danificado"
+    ],
+    "diagnostico": [
+      "Verificar se turbina gira livremente",
+      "Medir tensão no motor",
+      "Testar capacitor",
+      "Inspecionar placa eletrônica"
+    ],
+    "teste_rapido": [
+      "Girar turbina manualmente",
+      "Medir tensão no conector do motor"
+    ],
+    "dica": "Pode ocorrer quando turbina está suja",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Midea",
+    "linha": "Inverter",
+    "codigo": "EC",
+    "significado": "Proteção por vazamento de refrigerante",
+    "causas": [
+      "Baixa carga de refrigerante",
+      "Vazamento no sistema",
+      "Sensor de pressão com defeito"
+    ],
+    "diagnostico": [
+      "Verificar pressão do sistema",
+      "Inspecionar vazamentos",
+      "Checar sensor de pressão"
+    ],
+    "teste_rapido": [
+      "Verificar formação de gelo na evaporadora",
+      "Medir pressão de sucção"
+    ],
+    "dica": "Erro comum após instalação mal executada",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Comfee",
+    "linha": "Inverter",
+    "codigo": "E1",
+    "significado": "Falha de comunicação entre unidades",
+    "causas": [
+      "Cabo de comunicação rompido",
+      "Conector solto",
+      "Placa com defeito"
+    ],
+    "diagnostico": [
+      "Verificar continuidade do cabo",
+      "Checar polaridade dos fios",
+      "Inspecionar placas eletrônicas"
+    ],
+    "teste_rapido": [
+      "Reapertar conectores",
+      "Reiniciar equipamento"
+    ],
+    "dica": "Comfee usa plataforma semelhante à Midea",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Agratto",
+    "linha": "Inverter",
+    "codigo": "E1",
+    "significado": "Falha de comunicação entre unidades",
+    "causas": [
+      "Cabo de comunicação rompido",
+      "Conector solto",
+      "Placa da evaporadora defeituosa"
+    ],
+    "diagnostico": [
+      "Verificar continuidade do cabo",
+      "Conferir conectores",
+      "Medir tensão entre unidades"
+    ],
+    "teste_rapido": [
+      "Reiniciar sistema",
+      "Reapertar conectores"
+    ],
+    "dica": "Erro comum após instalação",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "TCL",
+    "linha": "Inverter",
+    "codigo": "E0",
+    "significado": "Erro de memória EEPROM",
+    "causas": [
+      "Falha na memória da placa",
+      "Queda de energia",
+      "Placa eletrônica defeituosa"
+    ],
+    "diagnostico": [
+      "Desligar equipamento da rede",
+      "Religar após alguns minutos",
+      "Verificar placa eletrônica"
+    ],
+    "teste_rapido": [
+      "Reiniciar equipamento"
+    ],
+    "dica": "Erro relacionado à memória da placa",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "LG",
+    "linha": "Dual Inverter / Libero",
+    "codigo": "CH05",
+    "significado": "Falha de comunicação entre unidade interna e externa",
+    "causas": [
+      "Cabo de comunicação rompido ou invertido",
+      "Conexões soltas entre evaporadora e condensadora",
+      "Falta de alimentação em uma das unidades",
+      "Falha em uma das placas eletrônicas"
+    ],
+    "diagnostico": [
+      "Verificar continuidade e polaridade da interligação entre as unidades",
+      "Conferir aperto dos bornes e conectores",
+      "Confirmar alimentação correta na unidade interna e na externa",
+      "Se a fiação estiver correta, avaliar placas eletrônicas"
+    ],
+    "teste_rapido": [
+      "Desligar o disjuntor por cerca de 5 minutos e religar",
+      "Reapertar os bornes de interligação e testar novamente"
+    ],
+    "dica": "Em materiais LG esse código também pode aparecer como E0 ou CH53, dependendo da plataforma.",
+    "linha_modelo": "Dual Inverter / Libero",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "LG",
+    "linha": "Dual Inverter / Libero",
+    "codigo": "CH10",
+    "significado": "Falha no ventilador da unidade interna",
+    "causas": [
+      "Motor ventilador da evaporadora com defeito",
+      "Turbina travada por sujeira ou obstrução",
+      "Falha no circuito de acionamento da placa",
+      "Chicote ou conector do ventilador com mau contato"
+    ],
+    "diagnostico": [
+      "Verificar se a turbina gira livremente",
+      "Inspecionar sujeira, gelo ou obstruções no conjunto da evaporadora",
+      "Conferir chicote e conectores do motor ventilador",
+      "Medir alimentação do motor e avaliar a placa se necessário"
+    ],
+    "teste_rapido": [
+      "Girar a turbina manualmente com o aparelho desligado",
+      "Desobstruir e limpar a região do ventilador antes de novo teste"
+    ],
+    "dica": "Nos materiais da LG esse erro também pode aparecer como E6 em alguns modelos.",
+    "linha_modelo": "Dual Inverter / Libero",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "LG",
+    "linha": "Dual Inverter / Libero",
+    "codigo": "CH34",
+    "significado": "Desligamento de proteção por pressão anormal no sistema",
+    "causas": [
+      "Pressão anormal no circuito frigorígeno",
+      "Restrição ou deficiência de troca térmica",
+      "Ventilação insuficiente no condensador",
+      "Condição anormal no sistema selado"
+    ],
+    "diagnostico": [
+      "Verificar limpeza e ventilação do condensador",
+      "Conferir pressão de trabalho do sistema",
+      "Avaliar possíveis restrições no circuito frigorígeno",
+      "Inspecionar condições gerais do sistema selado"
+    ],
+    "teste_rapido": [
+      "Desligar o equipamento e verificar obstruções na condensadora",
+      "Limpar condensador e testar novamente"
+    ],
+    "dica": "A própria LG descreve CH34 como atuação do relé de segurança por pressão anormal no sistema selado.",
+    "linha_modelo": "Dual Inverter / Libero",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Samsung",
+    "linha": "Inverter",
+    "codigo": "E101 / E102",
+    "significado": "Erro de comunicação entre unidade interna e externa",
+    "causas": [
+      "Cabo de comunicação interrompido",
+      "Conector solto ou oxidado",
+      "Falha de alimentação em uma das unidades",
+      "Placa eletrônica com defeito"
+    ],
+    "diagnostico": [
+      "Verificar continuidade e polaridade do cabo de comunicação",
+      "Conferir alimentação da unidade externa",
+      "Inspecionar conectores e emendas",
+      "Se a interligação estiver correta, avaliar placas"
+    ],
+    "teste_rapido": [
+      "Desligar o disjuntor por alguns minutos e religar",
+      "Reapertar conectores da interligação"
+    ],
+    "dica": "Código clássico de falha de comunicação em Samsung inverter.",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Samsung",
+    "linha": "Inverter",
+    "codigo": "E121",
+    "significado": "Erro do sensor de temperatura ambiente da unidade interna",
+    "causas": [
+      "Sensor de ambiente aberto",
+      "Sensor em curto",
+      "Chicote danificado",
+      "Falha de leitura na placa"
+    ],
+    "diagnostico": [
+      "Localizar o sensor ambiente da evaporadora",
+      "Medir a resistência do sensor",
+      "Verificar conectores e chicote até a placa",
+      "Comparar a leitura com a tabela do NTC do modelo"
+    ],
+    "teste_rapido": [
+      "Desconectar o sensor e medir com multímetro",
+      "Substituir temporariamente por sensor compatível para teste"
+    ],
+    "dica": "Nos materiais Samsung aparece como erro do ROOM TH.",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Samsung",
+    "linha": "Inverter",
+    "codigo": "E122",
+    "significado": "Erro do sensor de temperatura de tubulação/entrada da evaporadora",
+    "causas": [
+      "Sensor de tubulação aberto",
+      "Sensor em curto",
+      "Conector com mau contato",
+      "Falha na placa eletrônica"
+    ],
+    "diagnostico": [
+      "Verificar o sensor de tubulação da evaporadora",
+      "Medir resistência do sensor",
+      "Inspecionar chicote e conector",
+      "Comparar com a tabela do sensor do modelo"
+    ],
+    "teste_rapido": [
+      "Medir o sensor diretamente no conector",
+      "Substituir por sensor equivalente para confirmar"
+    ],
+    "dica": "Em tabelas Samsung esse código é associado ao sensor de entrada/pipe da evaporadora.",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Samsung",
+    "linha": "Inverter",
+    "codigo": "E154",
+    "significado": "Erro do ventilador interno",
+    "causas": [
+      "Motor ventilador da evaporadora com defeito",
+      "Turbina travada ou obstruída",
+      "Chicote desconectado",
+      "Falha da placa de acionamento"
+    ],
+    "diagnostico": [
+      "Verificar se a turbina gira livremente",
+      "Conferir motor e chicote do ventilador interno",
+      "Medir alimentação do motor",
+      "Se motor estiver normal, avaliar a placa"
+    ],
+    "teste_rapido": [
+      "Girar a turbina manualmente com a unidade desligada",
+      "Remover sujeira excessiva e testar novamente"
+    ],
+    "dica": "Erro direto de ventilador da unidade interna.",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Samsung",
+    "linha": "Inverter",
+    "codigo": "E162",
+    "significado": "Erro EEPROM da unidade interna",
+    "causas": [
+      "Falha de memória EEPROM",
+      "Corrupção de dados na placa",
+      "Oscilação elétrica",
+      "Defeito da placa da evaporadora"
+    ],
+    "diagnostico": [
+      "Desenergizar o equipamento e religar após alguns minutos",
+      "Confirmar alimentação estável na placa",
+      "Se o erro persistir, avaliar regravação ou troca da placa"
+    ],
+    "teste_rapido": [
+      "Desligar o disjuntor por 5 minutos",
+      "Religar e verificar se o erro retorna"
+    ],
+    "dica": "Erro específico da EEPROM da unidade interna.",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Samsung",
+    "linha": "Inverter",
+    "codigo": "E461",
+    "significado": "Erro de partida do compressor",
+    "causas": [
+      "Compressor com dificuldade de partida",
+      "Falha no chicote ou conexões do compressor",
+      "Problema na placa/inversor da unidade externa",
+      "Alimentação elétrica inadequada"
+    ],
+    "diagnostico": [
+      "Verificar tensão de alimentação",
+      "Conferir chicote e terminais do compressor",
+      "Medir resistência dos enrolamentos",
+      "Avaliar a placa/inversor da condensadora"
+    ],
+    "teste_rapido": [
+      "Desligar a energia e religar após alguns minutos",
+      "Conferir bornes e conectores do compressor"
+    ],
+    "dica": "Indica falha no início de funcionamento do compressor.",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Samsung",
+    "linha": "Inverter",
+    "codigo": "E464",
+    "significado": "Sobrecorrente do IPM (módulo inversor)",
+    "causas": [
+      "IPM em sobrecorrente",
+      "Compressor travado ou em curto",
+      "Falha de dissipação térmica",
+      "Placa da unidade externa com defeito"
+    ],
+    "diagnostico": [
+      "Verificar compressor e seus enrolamentos",
+      "Avaliar o módulo inversor/IPM",
+      "Conferir dissipação térmica e ventilação da condensadora",
+      "Inspecionar a placa da unidade externa"
+    ],
+    "teste_rapido": [
+      "Desligar o sistema e verificar aquecimento excessivo na condensadora",
+      "Conferir se a ventilação do conjunto externo está livre"
+    ],
+    "dica": "Erro típico de sobrecorrente no módulo inversor da Samsung.",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Gree",
+    "linha": "Inverter",
+    "codigo": "E1",
+    "significado": "Falha de comunicação entre unidade interna e externa",
+    "causas": [
+      "Cabo de comunicação rompido",
+      "Conexão solta ou invertida",
+      "Placa da evaporadora com defeito",
+      "Placa da condensadora com defeito"
+    ],
+    "diagnostico": [
+      "Verificar continuidade do cabo de comunicação",
+      "Conferir polaridade dos fios",
+      "Inspecionar conectores nas placas",
+      "Testar tensão de comunicação"
+    ],
+    "teste_rapido": [
+      "Reapertar conectores",
+      "Desligar energia por alguns minutos e religar"
+    ],
+    "dica": "Erro comum após instalação ou manutenção",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Gree",
+    "linha": "Inverter",
+    "codigo": "E2",
+    "significado": "Falha no sensor de temperatura da evaporadora",
+    "causas": [
+      "Sensor NTC aberto",
+      "Sensor em curto",
+      "Chicote danificado",
+      "Placa eletrônica defeituosa"
+    ],
+    "diagnostico": [
+      "Localizar sensor na evaporadora",
+      "Medir resistência do sensor",
+      "Verificar chicote até a placa",
+      "Comparar leitura com tabela NTC"
+    ],
+    "teste_rapido": [
+      "Medir sensor com multímetro",
+      "Substituir sensor para teste"
+    ],
+    "dica": "Sensores geralmente são NTC 10k",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Gree",
+    "linha": "Inverter",
+    "codigo": "E5",
+    "significado": "Proteção de sobrecorrente do compressor",
+    "causas": [
+      "Compressor travado",
+      "Placa inverter com defeito",
+      "Baixa tensão de alimentação",
+      "Curto no compressor"
+    ],
+    "diagnostico": [
+      "Medir corrente do compressor",
+      "Verificar tensão da rede",
+      "Testar enrolamentos do compressor",
+      "Verificar placa inverter"
+    ],
+    "teste_rapido": [
+      "Desligar equipamento e aguardar alguns minutos",
+      "Religar e observar corrente de partida"
+    ],
+    "dica": "Pode ocorrer quando tensão da rede está baixa",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Electrolux",
+    "linha": "Inverter",
+    "codigo": "E1",
+    "significado": "Falha de comunicação entre unidades",
+    "causas": [
+      "Cabo de comunicação rompido",
+      "Conector solto",
+      "Placa eletrônica defeituosa"
+    ],
+    "diagnostico": [
+      "Verificar continuidade do cabo",
+      "Checar polaridade dos fios",
+      "Inspecionar conectores"
+    ],
+    "teste_rapido": [
+      "Reiniciar equipamento",
+      "Reapertar conexões"
+    ],
+    "dica": "Erro comum após instalação",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Electrolux",
+    "linha": "Inverter",
+    "codigo": "E5",
+    "significado": "Falha no sensor de temperatura",
+    "causas": [
+      "Sensor aberto",
+      "Sensor em curto",
+      "Chicote danificado",
+      "Falha na placa"
+    ],
+    "diagnostico": [
+      "Localizar sensor",
+      "Medir resistência",
+      "Comparar com tabela NTC",
+      "Verificar chicote"
+    ],
+    "teste_rapido": [
+      "Substituir sensor temporariamente",
+      "Medir sensor com multímetro"
+    ],
+    "dica": "Sensores geralmente NTC 10k",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Elgin",
+    "linha": "Inverter",
+    "codigo": "E3",
+    "significado": "Falha no ventilador da unidade interna",
+    "causas": [
+      "Motor ventilador com defeito",
+      "Turbina travada",
+      "Chicote desconectado",
+      "Placa eletrônica com falha"
+    ],
+    "diagnostico": [
+      "Verificar se turbina gira livremente",
+      "Conferir chicote do ventilador",
+      "Medir tensão no motor",
+      "Inspecionar placa"
+    ],
+    "teste_rapido": [
+      "Girar turbina manualmente",
+      "Limpar sujeira da evaporadora"
+    ],
+    "dica": "Erro comum quando há acúmulo de sujeira",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Daikin",
+    "linha": "Inverter",
+    "codigo": "U0",
+    "significado": "Baixa carga de refrigerante / possível vazamento",
+    "causas": [
+      "Falta de refrigerante",
+      "Vazamento no sistema",
+      "Válvula de serviço parcialmente fechada",
+      "Sensor de pressão com defeito"
+    ],
+    "diagnostico": [
+      "Verificar pressão do sistema com manifold",
+      "Inspecionar possíveis vazamentos nas conexões",
+      "Confirmar válvulas de serviço abertas",
+      "Checar sensor de pressão"
+    ],
+    "teste_rapido": [
+      "Observar formação de gelo na evaporadora",
+      "Medir pressão de sucção"
+    ],
+    "dica": "Erro muito comum quando há vazamento ou carga incorreta de gás",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Daikin",
+    "linha": "Inverter",
+    "codigo": "U4",
+    "significado": "Falha de comunicação entre unidades",
+    "causas": [
+      "Cabo de comunicação rompido",
+      "Conexões invertidas",
+      "Placa da unidade interna defeituosa",
+      "Placa da unidade externa defeituosa"
+    ],
+    "diagnostico": [
+      "Verificar continuidade do cabo de comunicação",
+      "Conferir polaridade e ligação dos fios",
+      "Inspecionar conectores nas placas",
+      "Testar alimentação das unidades"
+    ],
+    "teste_rapido": [
+      "Reapertar conectores",
+      "Desligar disjuntor por alguns minutos e religar"
+    ],
+    "dica": "Erro clássico de comunicação em equipamentos Daikin",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Fujitsu",
+    "linha": "Inverter",
+    "codigo": "E0",
+    "significado": "Erro de comunicação entre unidade interna e externa",
+    "causas": [
+      "Cabo de comunicação rompido",
+      "Conector solto",
+      "Placa eletrônica defeituosa"
+    ],
+    "diagnostico": [
+      "Verificar continuidade do cabo",
+      "Inspecionar conectores",
+      "Testar alimentação das unidades"
+    ],
+    "teste_rapido": [
+      "Reapertar conectores",
+      "Reiniciar equipamento"
+    ],
+    "dica": "Erro comum após instalação",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Fujitsu",
+    "linha": "Inverter",
+    "codigo": "E3",
+    "significado": "Falha no ventilador da unidade interna",
+    "causas": [
+      "Motor ventilador defeituoso",
+      "Turbina travada",
+      "Chicote desconectado",
+      "Placa eletrônica com defeito"
+    ],
+    "diagnostico": [
+      "Verificar se turbina gira livremente",
+      "Conferir chicote do motor",
+      "Medir tensão no motor",
+      "Inspecionar placa eletrônica"
+    ],
+    "teste_rapido": [
+      "Girar turbina manualmente",
+      "Limpar sujeira da evaporadora"
+    ],
+    "dica": "Pode ocorrer quando a turbina está travada por sujeira",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Carrier",
+    "linha": "Inverter",
+    "codigo": "P4",
+    "significado": "Proteção de alta temperatura do compressor",
+    "causas": [
+      "Condensador sujo",
+      "Ventilador externo com defeito",
+      "Alta pressão no sistema",
+      "Compressor superaquecendo"
+    ],
+    "diagnostico": [
+      "Verificar limpeza do condensador",
+      "Conferir funcionamento do ventilador externo",
+      "Medir pressão do sistema",
+      "Inspecionar compressor"
+    ],
+    "teste_rapido": [
+      "Limpar condensador",
+      "Verificar ventilação da unidade externa"
+    ],
+    "dica": "Erro comum quando condensadora está obstruída",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Hitachi",
+    "linha": "Inverter",
+    "codigo": "E1",
+    "significado": "Erro de comunicação entre unidades",
+    "causas": [
+      "Cabo de comunicação rompido",
+      "Conector solto",
+      "Placa eletrônica defeituosa"
+    ],
+    "diagnostico": [
+      "Verificar continuidade do cabo",
+      "Inspecionar conectores",
+      "Conferir alimentação das unidades"
+    ],
+    "teste_rapido": [
+      "Reiniciar equipamento",
+      "Reapertar conexões"
+    ],
+    "dica": "Erro típico de comunicação",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Hisense",
+    "linha": "Inverter",
+    "codigo": "E5",
+    "significado": "Proteção de sobrecorrente do compressor",
+    "causas": [
+      "Compressor travado",
+      "Placa inverter defeituosa",
+      "Baixa tensão da rede",
+      "Curto no compressor"
+    ],
+    "diagnostico": [
+      "Medir corrente do compressor",
+      "Verificar tensão de alimentação",
+      "Testar enrolamentos do compressor",
+      "Inspecionar placa inverter"
+    ],
+    "teste_rapido": [
+      "Desligar sistema e religar após alguns minutos",
+      "Verificar tensão da rede"
+    ],
+    "dica": "Pode ocorrer quando a rede elétrica está instável",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Daikin",
+    "linha": "Inverter",
+    "codigo": "U2",
+    "significado": "Baixa tensão ou falha de alimentação",
+    "causas": [
+      "Tensão de rede baixa",
+      "Problema na alimentação da placa",
+      "Fiação inadequada",
+      "Queda de energia"
+    ],
+    "diagnostico": [
+      "Medir tensão de alimentação",
+      "Verificar disjuntor",
+      "Conferir cabos de alimentação",
+      "Inspecionar fonte da placa"
+    ],
+    "teste_rapido": [
+      "Medir tensão da tomada",
+      "Reiniciar sistema"
+    ],
+    "dica": "Pode ocorrer em redes elétricas instáveis",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Daikin",
+    "linha": "Inverter",
+    "codigo": "A1",
+    "significado": "Falha na placa eletrônica da unidade interna",
+    "causas": [
+      "Defeito na placa",
+      "Curto em componentes",
+      "Falha de memória",
+      "Problema na fonte"
+    ],
+    "diagnostico": [
+      "Inspecionar placa",
+      "Verificar alimentação da placa",
+      "Testar componentes principais"
+    ],
+    "teste_rapido": [
+      "Reiniciar sistema",
+      "Inspecionar visualmente a placa"
+    ],
+    "dica": "Normalmente requer substituição da placa",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Fujitsu",
+    "linha": "Inverter",
+    "codigo": "E1",
+    "significado": "Erro do sensor de temperatura ambiente",
+    "causas": [
+      "Sensor NTC aberto",
+      "Sensor em curto",
+      "Chicote rompido",
+      "Placa defeituosa"
+    ],
+    "diagnostico": [
+      "Medir sensor",
+      "Verificar chicote",
+      "Comparar resistência com tabela"
+    ],
+    "teste_rapido": [
+      "Substituir sensor para teste",
+      "Medir com multímetro"
+    ],
+    "dica": "Sensores geralmente NTC 10k",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Fujitsu",
+    "linha": "Inverter",
+    "codigo": "E2",
+    "significado": "Erro do sensor da serpentina",
+    "causas": [
+      "Sensor aberto",
+      "Sensor em curto",
+      "Chicote danificado",
+      "Placa defeituosa"
+    ],
+    "diagnostico": [
+      "Medir sensor da serpentina",
+      "Verificar chicote",
+      "Comparar valores"
+    ],
+    "teste_rapido": [
+      "Medir sensor",
+      "Trocar sensor para teste"
+    ],
+    "dica": "Sensor localizado na serpentina da evaporadora",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Carrier",
+    "linha": "Inverter",
+    "codigo": "P1",
+    "significado": "Proteção de baixa tensão",
+    "causas": [
+      "Rede elétrica instável",
+      "Tensão abaixo do especificado",
+      "Problema na fonte da placa"
+    ],
+    "diagnostico": [
+      "Medir tensão da rede",
+      "Verificar alimentação da placa"
+    ],
+    "teste_rapido": [
+      "Reiniciar sistema",
+      "Verificar tomada"
+    ],
+    "dica": "Comum em regiões com rede fraca",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Hitachi",
+    "linha": "Inverter",
+    "codigo": "E3",
+    "significado": "Erro do ventilador da evaporadora",
+    "causas": [
+      "Motor defeituoso",
+      "Turbina travada",
+      "Chicote desconectado"
+    ],
+    "diagnostico": [
+      "Verificar turbina",
+      "Medir tensão no motor"
+    ],
+    "teste_rapido": [
+      "Girar turbina manualmente"
+    ],
+    "dica": "Pode ocorrer por sujeira acumulada",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Hisense",
+    "linha": "Inverter",
+    "codigo": "E1",
+    "significado": "Falha de comunicação",
+    "causas": [
+      "Cabo rompido",
+      "Conector solto",
+      "Placa defeituosa"
+    ],
+    "diagnostico": [
+      "Verificar cabo",
+      "Inspecionar conectores"
+    ],
+    "teste_rapido": [
+      "Reapertar cabos",
+      "Reiniciar aparelho"
+    ],
+    "dica": "Erro comum em instalação recente",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Komeco",
+    "linha": "Inverter",
+    "codigo": "E1",
+    "significado": "Falha de comunicação entre unidade interna e externa",
+    "causas": [
+      "Cabo de comunicação rompido",
+      "Conector solto",
+      "Placa defeituosa"
+    ],
+    "diagnostico": [
+      "Verificar continuidade do cabo",
+      "Inspecionar conectores",
+      "Testar placas"
+    ],
+    "teste_rapido": [
+      "Reapertar conectores",
+      "Reiniciar equipamento"
+    ],
+    "dica": "Erro comum após instalação",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Komeco",
+    "linha": "Inverter",
+    "codigo": "E5",
+    "significado": "Proteção de sobrecorrente do compressor",
+    "causas": [
+      "Compressor travado",
+      "Placa inverter defeituosa",
+      "Baixa tensão"
+    ],
+    "diagnostico": [
+      "Medir corrente do compressor",
+      "Verificar tensão de rede",
+      "Testar compressor"
+    ],
+    "teste_rapido": [
+      "Desligar e religar sistema"
+    ],
+    "dica": "Pode indicar falha do compressor",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Consul",
+    "linha": "Inverter",
+    "codigo": "F1",
+    "significado": "Erro do sensor de temperatura ambiente",
+    "causas": [
+      "Sensor NTC aberto",
+      "Sensor em curto",
+      "Chicote danificado"
+    ],
+    "diagnostico": [
+      "Medir sensor",
+      "Verificar chicote",
+      "Comparar com tabela NTC"
+    ],
+    "teste_rapido": [
+      "Substituir sensor para teste"
+    ],
+    "dica": "Sensor geralmente NTC 10k",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Consul",
+    "linha": "Inverter",
+    "codigo": "F2",
+    "significado": "Erro do sensor da serpentina da evaporadora",
+    "causas": [
+      "Sensor defeituoso",
+      "Chicote rompido",
+      "Falha na placa"
+    ],
+    "diagnostico": [
+      "Medir sensor da serpentina",
+      "Verificar chicote"
+    ],
+    "teste_rapido": [
+      "Trocar sensor para teste"
+    ],
+    "dica": "Sensor localizado na serpentina",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Springer",
+    "linha": "Inverter",
+    "codigo": "E1",
+    "significado": "Falha de comunicação entre unidades",
+    "causas": [
+      "Cabo rompido",
+      "Conector solto",
+      "Placa defeituosa"
+    ],
+    "diagnostico": [
+      "Verificar cabo de comunicação",
+      "Inspecionar conectores"
+    ],
+    "teste_rapido": [
+      "Reapertar conexões",
+      "Reiniciar equipamento"
+    ],
+    "dica": "Muito comum após instalação",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Springer",
+    "linha": "Inverter",
+    "codigo": "P4",
+    "significado": "Alta temperatura do compressor",
+    "causas": [
+      "Condensador sujo",
+      "Ventilador externo defeituoso",
+      "Alta pressão"
+    ],
+    "diagnostico": [
+      "Limpar condensador",
+      "Verificar ventilador externo",
+      "Medir pressão"
+    ],
+    "teste_rapido": [
+      "Limpar unidade externa"
+    ],
+    "dica": "Erro frequente quando condensadora está obstruída",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "York",
+    "linha": "Inverter",
+    "codigo": "E2",
+    "significado": "Erro do sensor de temperatura",
+    "causas": [
+      "Sensor aberto",
+      "Sensor em curto",
+      "Chicote defeituoso"
+    ],
+    "diagnostico": [
+      "Medir resistência do sensor",
+      "Verificar chicote"
+    ],
+    "teste_rapido": [
+      "Substituir sensor temporariamente"
+    ],
+    "dica": "Sensores geralmente NTC",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Trane",
+    "linha": "Inverter",
+    "codigo": "E4",
+    "significado": "Proteção de alta pressão",
+    "causas": [
+      "Condensador sujo",
+      "Ventilação insuficiente",
+      "Pressão elevada"
+    ],
+    "diagnostico": [
+      "Verificar condensador",
+      "Medir pressão do sistema"
+    ],
+    "teste_rapido": [
+      "Limpar condensadora"
+    ],
+    "dica": "Erro comum quando há bloqueio de ventilação",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Rheem",
+    "linha": "Inverter",
+    "codigo": "E5",
+    "significado": "Sobrecorrente do compressor",
+    "causas": [
+      "Compressor travado",
+      "Placa inverter defeituosa",
+      "Baixa tensão"
+    ],
+    "diagnostico": [
+      "Medir corrente",
+      "Verificar tensão",
+      "Testar compressor"
+    ],
+    "teste_rapido": [
+      "Desligar e religar sistema"
+    ],
+    "dica": "Pode indicar problema sério no compressor",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "AUX",
+    "linha": "Inverter",
+    "codigo": "E1",
+    "significado": "Falha de comunicação entre unidade interna e externa",
+    "causas": [
+      "Cabo de comunicação rompido",
+      "Conector solto",
+      "Placa defeituosa"
+    ],
+    "diagnostico": [
+      "Verificar continuidade do cabo",
+      "Inspecionar conectores",
+      "Testar placas"
+    ],
+    "teste_rapido": [
+      "Reapertar conectores",
+      "Reiniciar equipamento"
+    ],
+    "dica": "Erro comum após instalação",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "AUX",
+    "linha": "Inverter",
+    "codigo": "E5",
+    "significado": "Proteção de sobrecorrente do compressor",
+    "causas": [
+      "Compressor travado",
+      "Placa inverter defeituosa",
+      "Baixa tensão de alimentação"
+    ],
+    "diagnostico": [
+      "Medir corrente do compressor",
+      "Verificar tensão da rede",
+      "Testar compressor"
+    ],
+    "teste_rapido": [
+      "Desligar e religar equipamento"
+    ],
+    "dica": "Pode indicar falha no compressor ou na placa inverter",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Haier",
+    "linha": "Inverter",
+    "codigo": "E1",
+    "significado": "Falha de comunicação entre unidades",
+    "causas": [
+      "Cabo de comunicação rompido",
+      "Conector solto",
+      "Placa defeituosa"
+    ],
+    "diagnostico": [
+      "Verificar cabo de comunicação",
+      "Inspecionar conectores",
+      "Testar placas"
+    ],
+    "teste_rapido": [
+      "Reapertar conexões",
+      "Reiniciar sistema"
+    ],
+    "dica": "Erro comum após instalação ou manutenção",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Haier",
+    "linha": "Inverter",
+    "codigo": "E2",
+    "significado": "Erro do sensor de temperatura ambiente",
+    "causas": [
+      "Sensor NTC aberto",
+      "Sensor em curto",
+      "Chicote danificado"
+    ],
+    "diagnostico": [
+      "Medir sensor",
+      "Verificar chicote",
+      "Comparar resistência com tabela"
+    ],
+    "teste_rapido": [
+      "Substituir sensor para teste"
+    ],
+    "dica": "Sensores normalmente NTC 10k",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "EOS",
+    "linha": "Inverter",
+    "codigo": "E1",
+    "significado": "Erro de comunicação entre unidades",
+    "causas": [
+      "Cabo rompido",
+      "Conector solto",
+      "Placa defeituosa"
+    ],
+    "diagnostico": [
+      "Verificar cabo",
+      "Inspecionar conectores",
+      "Testar placas"
+    ],
+    "teste_rapido": [
+      "Reapertar cabos",
+      "Reiniciar aparelho"
+    ],
+    "dica": "Erro comum em instalação recente",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "EOS",
+    "linha": "Inverter",
+    "codigo": "E3",
+    "significado": "Falha no ventilador da unidade interna",
+    "causas": [
+      "Motor ventilador defeituoso",
+      "Turbina travada",
+      "Chicote desconectado"
+    ],
+    "diagnostico": [
+      "Verificar turbina",
+      "Medir tensão no motor",
+      "Conferir chicote"
+    ],
+    "teste_rapido": [
+      "Girar turbina manualmente",
+      "Limpar evaporadora"
+    ],
+    "dica": "Pode ocorrer quando há sujeira acumulada",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Fontaine",
+    "linha": "Inverter",
+    "codigo": "E4",
+    "significado": "Proteção de alta pressão",
+    "causas": [
+      "Condensador sujo",
+      "Ventilação insuficiente",
+      "Pressão elevada"
+    ],
+    "diagnostico": [
+      "Verificar limpeza do condensador",
+      "Medir pressão do sistema"
+    ],
+    "teste_rapido": [
+      "Limpar condensadora"
+    ],
+    "dica": "Erro comum quando há bloqueio de ventilação",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Fontaine",
+    "linha": "Inverter",
+    "codigo": "E5",
+    "significado": "Sobrecorrente do compressor",
+    "causas": [
+      "Compressor travado",
+      "Placa inverter defeituosa",
+      "Baixa tensão"
+    ],
+    "diagnostico": [
+      "Medir corrente",
+      "Verificar tensão",
+      "Testar compressor"
+    ],
+    "teste_rapido": [
+      "Desligar e religar equipamento"
+    ],
+    "dica": "Pode indicar problema sério no compressor",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Midea",
+    "linha": "Inverter",
+    "codigo": "E4",
+    "significado": "Proteção de baixa pressão",
+    "causas": [
+      "Falta de gás",
+      "Vazamento",
+      "Sensor defeituoso"
+    ],
+    "diagnostico": [
+      "Verificar pressão do sistema",
+      "Procurar vazamento",
+      "Testar sensor"
+    ],
+    "teste_rapido": [
+      "Checar gelo na evaporadora"
+    ],
+    "dica": "Comum em instalação mal executada",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Midea",
+    "linha": "Inverter",
+    "codigo": "E5",
+    "significado": "Proteção de sobrecorrente do compressor",
+    "causas": [
+      "Compressor travado",
+      "Placa inverter defeituosa",
+      "Baixa tensão"
+    ],
+    "diagnostico": [
+      "Medir corrente",
+      "Testar compressor",
+      "Verificar tensão"
+    ],
+    "teste_rapido": [
+      "Desligar e religar aparelho"
+    ],
+    "dica": "Pode indicar problema sério no compressor",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Midea",
+    "linha": "Inverter",
+    "codigo": "P0",
+    "significado": "Proteção do módulo inverter",
+    "causas": [
+      "IPM superaquecido",
+      "Ventilação insuficiente",
+      "Falha na placa"
+    ],
+    "diagnostico": [
+      "Verificar ventilação da condensadora",
+      "Inspecionar placa inverter"
+    ],
+    "teste_rapido": [
+      "Desligar equipamento e aguardar resfriar"
+    ],
+    "dica": "Associado ao módulo IPM",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Midea",
+    "linha": "Inverter",
+    "codigo": "P1",
+    "significado": "Proteção de baixa tensão",
+    "causas": [
+      "Rede elétrica fraca",
+      "Queda de tensão",
+      "Problema na fonte"
+    ],
+    "diagnostico": [
+      "Medir tensão de alimentação",
+      "Verificar fiação"
+    ],
+    "teste_rapido": [
+      "Testar em outra rede"
+    ],
+    "dica": "Comum em regiões com rede instável",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Midea",
+    "linha": "Inverter",
+    "codigo": "P2",
+    "significado": "Proteção de alta temperatura do compressor",
+    "causas": [
+      "Condensador sujo",
+      "Ventilador externo defeituoso",
+      "Pressão elevada"
+    ],
+    "diagnostico": [
+      "Limpar condensador",
+      "Verificar ventilador",
+      "Medir pressão"
+    ],
+    "teste_rapido": [
+      "Limpar unidade externa"
+    ],
+    "dica": "Alta temperatura do compressor",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Midea",
+    "linha": "Inverter",
+    "codigo": "P4",
+    "significado": "Proteção do compressor",
+    "causas": [
+      "Sobrecorrente",
+      "Travamento do compressor",
+      "Falha inverter"
+    ],
+    "diagnostico": [
+      "Medir corrente",
+      "Testar compressor",
+      "Verificar placa"
+    ],
+    "teste_rapido": [
+      "Reiniciar equipamento"
+    ],
+    "dica": "Relacionado ao circuito inverter",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Midea",
+    "linha": "Inverter",
+    "codigo": "F0",
+    "significado": "Falha geral do sistema inverter",
+    "causas": [
+      "Erro de controle",
+      "Placa defeituosa"
+    ],
+    "diagnostico": [
+      "Reiniciar sistema",
+      "Inspecionar placa"
+    ],
+    "teste_rapido": [
+      "Desligar energia"
+    ],
+    "dica": "Erro genérico do controle",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Midea",
+    "linha": "Inverter",
+    "codigo": "H3",
+    "significado": "Proteção de sobrecarga do compressor",
+    "causas": [
+      "Alta pressão",
+      "Compressor sobrecarregado"
+    ],
+    "diagnostico": [
+      "Medir pressão",
+      "Verificar ventilação"
+    ],
+    "teste_rapido": [
+      "Limpar condensadora"
+    ],
+    "dica": "Sistema em sobrecarga",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Midea",
+    "linha": "Inverter",
+    "codigo": "H6",
+    "significado": "Erro no ventilador da unidade interna",
+    "causas": [
+      "Motor ventilador defeituoso",
+      "Placa sem acionamento"
+    ],
+    "diagnostico": [
+      "Medir tensão no motor",
+      "Testar ventilador"
+    ],
+    "teste_rapido": [
+      "Girar turbina manualmente"
+    ],
+    "dica": "Ventilador evaporadora",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Midea",
+    "linha": "Inverter",
+    "codigo": "P3",
+    "significado": "Proteção de alta corrente do compressor",
+    "causas": [
+      "Compressor com sobrecarga",
+      "Placa inverter defeituosa",
+      "Curto no compressor"
+    ],
+    "diagnostico": [
+      "Medir corrente do compressor",
+      "Verificar placa inverter",
+      "Testar compressor"
+    ],
+    "teste_rapido": [
+      "Desligar e religar equipamento"
+    ],
+    "dica": "Pode indicar travamento do compressor",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Midea",
+    "linha": "Inverter",
+    "codigo": "P5",
+    "significado": "Proteção de alta temperatura do módulo inverter",
+    "causas": [
+      "IPM superaquecido",
+      "Ventilação insuficiente",
+      "Falha na placa"
+    ],
+    "diagnostico": [
+      "Verificar ventilação da condensadora",
+      "Inspecionar módulo inverter",
+      "Verificar dissipadores"
+    ],
+    "teste_rapido": [
+      "Desligar equipamento e aguardar resfriar"
+    ],
+    "dica": "Associado ao módulo IPM",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Midea",
+    "linha": "Inverter",
+    "codigo": "P6",
+    "significado": "Proteção de temperatura do evaporador",
+    "causas": [
+      "Sensor defeituoso",
+      "Evaporador congelando",
+      "Fluxo de ar insuficiente"
+    ],
+    "diagnostico": [
+      "Verificar sensor de serpentina",
+      "Inspecionar evaporador",
+      "Verificar ventilador"
+    ],
+    "teste_rapido": [
+      "Limpar filtros",
+      "Reiniciar equipamento"
+    ],
+    "dica": "Pode ocorrer com filtros sujos",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Midea",
+    "linha": "Inverter",
+    "codigo": "F1",
+    "significado": "Falha no sensor de temperatura da evaporadora",
+    "causas": [
+      "Sensor aberto",
+      "Sensor em curto",
+      "Chicote rompido"
+    ],
+    "diagnostico": [
+      "Medir resistência do sensor",
+      "Verificar chicote",
+      "Comparar com tabela NTC"
+    ],
+    "teste_rapido": [
+      "Substituir sensor para teste"
+    ],
+    "dica": "Sensor normalmente NTC 10k",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Midea",
+    "linha": "Inverter",
+    "codigo": "F2",
+    "significado": "Falha no sensor da condensadora",
+    "causas": [
+      "Sensor defeituoso",
+      "Chicote danificado",
+      "Placa defeituosa"
+    ],
+    "diagnostico": [
+      "Medir sensor da unidade externa",
+      "Verificar chicote",
+      "Testar placa"
+    ],
+    "teste_rapido": [
+      "Substituir sensor"
+    ],
+    "dica": "Sensor localizado na serpentina externa",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Midea",
+    "linha": "Inverter",
+    "codigo": "F3",
+    "significado": "Erro no sensor de descarga do compressor",
+    "causas": [
+      "Sensor aberto",
+      "Sensor em curto",
+      "Placa defeituosa"
+    ],
+    "diagnostico": [
+      "Medir sensor de descarga",
+      "Verificar chicote",
+      "Comparar resistência"
+    ],
+    "teste_rapido": [
+      "Substituir sensor"
+    ],
+    "dica": "Relaciona‑se à proteção do compressor",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Midea",
+    "linha": "Inverter",
+    "codigo": "H0",
+    "significado": "Modo de aquecimento ativo / descongelamento",
+    "causas": [
+      "Ciclo normal do sistema",
+      "Degelo automático"
+    ],
+    "diagnostico": [
+      "Verificar se é ciclo normal",
+      "Aguardar término do degelo"
+    ],
+    "teste_rapido": [
+      "Aguardar funcionamento normal"
+    ],
+    "dica": "Não é falha, é modo de operação",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Midea",
+    "linha": "Inverter",
+    "codigo": "H1",
+    "significado": "Proteção de degelo do condensador",
+    "causas": [
+      "Acúmulo de gelo",
+      "Temperatura externa baixa"
+    ],
+    "diagnostico": [
+      "Verificar serpentina externa",
+      "Verificar sensor"
+    ],
+    "teste_rapido": [
+      "Aguardar degelo automático"
+    ],
+    "dica": "Normal em clima frio",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Midea",
+    "linha": "Inverter",
+    "codigo": "H2",
+    "significado": "Proteção de temperatura do evaporador",
+    "causas": [
+      "Fluxo de ar insuficiente",
+      "Sensor defeituoso"
+    ],
+    "diagnostico": [
+      "Verificar ventilador",
+      "Limpar filtros",
+      "Medir sensor"
+    ],
+    "teste_rapido": [
+      "Limpar filtros"
+    ],
+    "dica": "Pode ocorrer com evaporador congelando",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Gree",
+    "linha": "Inverter",
+    "codigo": "E0",
+    "significado": "Erro de EEPROM",
+    "causas": [
+      "Falha na memória da placa",
+      "Placa eletrônica defeituosa"
+    ],
+    "diagnostico": [
+      "Reiniciar equipamento",
+      "Verificar placa eletrônica"
+    ],
+    "teste_rapido": [
+      "Desligar energia por 5 minutos"
+    ],
+    "dica": "Erro interno da placa",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Gree",
+    "linha": "Inverter",
+    "codigo": "E3",
+    "significado": "Proteção de baixa pressão",
+    "causas": [
+      "Vazamento de refrigerante",
+      "Carga insuficiente"
+    ],
+    "diagnostico": [
+      "Medir pressão de sucção",
+      "Procurar vazamentos"
+    ],
+    "teste_rapido": [
+      "Verificar gelo na evaporadora"
+    ],
+    "dica": "Muito comum quando há vazamento",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Gree",
+    "linha": "Inverter",
+    "codigo": "E4",
+    "significado": "Proteção de descarga do compressor",
+    "causas": [
+      "Temperatura alta de descarga",
+      "Sensor defeituoso"
+    ],
+    "diagnostico": [
+      "Medir temperatura",
+      "Testar sensor"
+    ],
+    "teste_rapido": [
+      "Reiniciar equipamento"
+    ],
+    "dica": "Associado à proteção térmica",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Gree",
+    "linha": "Inverter",
+    "codigo": "E6",
+    "significado": "Erro de comunicação entre unidades",
+    "causas": [
+      "Cabo de comunicação rompido",
+      "Conector solto"
+    ],
+    "diagnostico": [
+      "Verificar continuidade do cabo",
+      "Inspecionar conectores"
+    ],
+    "teste_rapido": [
+      "Reapertar conexões"
+    ],
+    "dica": "Comum após instalação",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Gree",
+    "linha": "Inverter",
+    "codigo": "E7",
+    "significado": "Erro no ventilador da evaporadora",
+    "causas": [
+      "Motor ventilador defeituoso",
+      "Turbina travada"
+    ],
+    "diagnostico": [
+      "Verificar giro da turbina",
+      "Medir tensão no motor"
+    ],
+    "teste_rapido": [
+      "Girar turbina manualmente"
+    ],
+    "dica": "Pode ocorrer com sujeira acumulada",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Gree",
+    "linha": "Inverter",
+    "codigo": "F0",
+    "significado": "Erro de sensor ambiente",
+    "causas": [
+      "Sensor aberto",
+      "Sensor em curto"
+    ],
+    "diagnostico": [
+      "Medir resistência do sensor",
+      "Verificar chicote"
+    ],
+    "teste_rapido": [
+      "Substituir sensor"
+    ],
+    "dica": "Sensor NTC normalmente",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Gree",
+    "linha": "Inverter",
+    "codigo": "H6",
+    "significado": "Erro no ventilador da unidade interna",
+    "causas": [
+      "Motor defeituoso",
+      "Placa sem acionamento"
+    ],
+    "diagnostico": [
+      "Medir tensão no motor",
+      "Testar ventilador"
+    ],
+    "teste_rapido": [
+      "Girar turbina manualmente"
+    ],
+    "dica": "Relaciona-se ao ventilador da evaporadora",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Gree",
+    "linha": "Inverter",
+    "codigo": "P0",
+    "significado": "Proteção do módulo inverter",
+    "causas": [
+      "IPM superaquecido",
+      "Falha na placa inverter"
+    ],
+    "diagnostico": [
+      "Verificar ventilação",
+      "Inspecionar placa"
+    ],
+    "teste_rapido": [
+      "Desligar equipamento e aguardar"
+    ],
+    "dica": "Erro relacionado ao módulo inverter",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Gree",
+    "linha": "Inverter",
+    "codigo": "P1",
+    "significado": "Proteção de baixa tensão",
+    "causas": [
+      "Rede elétrica instável",
+      "Queda de tensão"
+    ],
+    "diagnostico": [
+      "Medir tensão de alimentação"
+    ],
+    "teste_rapido": [
+      "Testar em outra tomada"
+    ],
+    "dica": "Comum em rede fraca",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "LG",
+    "linha": "Inverter",
+    "codigo": "CH01",
+    "significado": "Erro do sensor de temperatura ambiente",
+    "causas": [
+      "Sensor NTC aberto",
+      "Sensor em curto",
+      "Chicote danificado"
+    ],
+    "diagnostico": [
+      "Medir resistência do sensor",
+      "Verificar chicote",
+      "Comparar com tabela NTC"
+    ],
+    "teste_rapido": [
+      "Substituir sensor para teste"
+    ],
+    "dica": "Sensor ambiente da evaporadora",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "LG",
+    "linha": "Inverter",
+    "codigo": "CH02",
+    "significado": "Erro do sensor da serpentina da evaporadora",
+    "causas": [
+      "Sensor aberto",
+      "Sensor em curto",
+      "Chicote defeituoso"
+    ],
+    "diagnostico": [
+      "Medir sensor da serpentina",
+      "Verificar chicote",
+      "Comparar valores"
+    ],
+    "teste_rapido": [
+      "Substituir sensor"
+    ],
+    "dica": "Sensor preso à serpentina da evaporadora",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "LG",
+    "linha": "Inverter",
+    "codigo": "CH03",
+    "significado": "Erro de comunicação com controle remoto",
+    "causas": [
+      "Controle remoto defeituoso",
+      "Receptor IR da unidade com falha"
+    ],
+    "diagnostico": [
+      "Testar outro controle",
+      "Verificar receptor IR"
+    ],
+    "teste_rapido": [
+      "Trocar pilhas do controle"
+    ],
+    "dica": "Relacionado ao receptor infravermelho",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "LG",
+    "linha": "Inverter",
+    "codigo": "CH04",
+    "significado": "Bomba de drenagem com falha",
+    "causas": [
+      "Bomba defeituosa",
+      "Sensor de nível acionado",
+      "Dreno entupido"
+    ],
+    "diagnostico": [
+      "Verificar bomba de dreno",
+      "Inspecionar tubulação"
+    ],
+    "teste_rapido": [
+      "Limpar dreno"
+    ],
+    "dica": "Aparece em unidades com bomba de dreno",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "LG",
+    "linha": "Inverter",
+    "codigo": "CH07",
+    "significado": "Erro no ventilador da unidade interna",
+    "causas": [
+      "Motor ventilador defeituoso",
+      "Turbina travada",
+      "Placa sem acionamento"
+    ],
+    "diagnostico": [
+      "Verificar giro da turbina",
+      "Medir tensão no motor"
+    ],
+    "teste_rapido": [
+      "Girar turbina manualmente"
+    ],
+    "dica": "Pode ocorrer com sujeira acumulada",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "LG",
+    "linha": "Inverter",
+    "codigo": "CH09",
+    "significado": "Erro no ventilador da unidade externa",
+    "causas": [
+      "Motor ventilador defeituoso",
+      "Placa inverter defeituosa"
+    ],
+    "diagnostico": [
+      "Verificar ventilador externo",
+      "Medir tensão"
+    ],
+    "teste_rapido": [
+      "Inspecionar ventilador"
+    ],
+    "dica": "Relacionado à condensadora",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "LG",
+    "linha": "Inverter",
+    "codigo": "CH21",
+    "significado": "Proteção de sobrecorrente do compressor",
+    "causas": [
+      "Compressor travado",
+      "Placa inverter defeituosa"
+    ],
+    "diagnostico": [
+      "Medir corrente do compressor",
+      "Testar compressor"
+    ],
+    "teste_rapido": [
+      "Desligar equipamento e religar"
+    ],
+    "dica": "Relaciona-se ao circuito inverter",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "LG",
+    "linha": "Inverter",
+    "codigo": "CH22",
+    "significado": "Proteção de corrente da unidade externa",
+    "causas": [
+      "Sobrecorrente",
+      "Falha no módulo inverter"
+    ],
+    "diagnostico": [
+      "Verificar módulo inverter",
+      "Medir corrente"
+    ],
+    "teste_rapido": [
+      "Reiniciar equipamento"
+    ],
+    "dica": "Erro ligado ao IPM",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "LG",
+    "linha": "Inverter",
+    "codigo": "CH26",
+    "significado": "Erro no sensor de descarga do compressor",
+    "causas": [
+      "Sensor defeituoso",
+      "Chicote rompido"
+    ],
+    "diagnostico": [
+      "Medir sensor",
+      "Verificar chicote"
+    ],
+    "teste_rapido": [
+      "Substituir sensor"
+    ],
+    "dica": "Proteção térmica do compressor",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "LG",
+    "linha": "Inverter",
+    "codigo": "CH38",
+    "significado": "Baixa pressão / falta de refrigerante",
+    "causas": [
+      "Vazamento de gás",
+      "Carga insuficiente"
+    ],
+    "diagnostico": [
+      "Verificar pressão de sucção",
+      "Inspecionar vazamentos"
+    ],
+    "teste_rapido": [
+      "Verificar gelo na evaporadora"
+    ],
+    "dica": "Comum quando há vazamento",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Samsung",
+    "linha": "Inverter",
+    "codigo": "E101",
+    "significado": "Falha de comunicação entre unidade interna e externa",
+    "causas": [
+      "Cabo de comunicação rompido",
+      "Conector solto",
+      "Placa defeituosa"
+    ],
+    "diagnostico": [
+      "Verificar continuidade do cabo",
+      "Checar conectores",
+      "Testar placas"
+    ],
+    "teste_rapido": [
+      "Reapertar conectores e reiniciar equipamento"
+    ],
+    "dica": "Erro comum após instalação",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Samsung",
+    "linha": "Inverter",
+    "codigo": "E102",
+    "significado": "Erro de comunicação entre módulos internos",
+    "causas": [
+      "Falha de comunicação",
+      "Placa defeituosa"
+    ],
+    "diagnostico": [
+      "Verificar cabos internos",
+      "Inspecionar placa"
+    ],
+    "teste_rapido": [
+      "Reiniciar equipamento"
+    ],
+    "dica": "Relacionado ao circuito de comunicação",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Samsung",
+    "linha": "Inverter",
+    "codigo": "E201",
+    "significado": "Falha de comunicação da unidade externa",
+    "causas": [
+      "Cabo de comunicação rompido",
+      "Placa externa defeituosa"
+    ],
+    "diagnostico": [
+      "Verificar cabo",
+      "Testar placa externa"
+    ],
+    "teste_rapido": [
+      "Reapertar conectores"
+    ],
+    "dica": "Relacionado à condensadora",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Samsung",
+    "linha": "Inverter",
+    "codigo": "E202",
+    "significado": "Erro de comunicação entre módulos da condensadora",
+    "causas": [
+      "Falha de comunicação",
+      "Placa defeituosa"
+    ],
+    "diagnostico": [
+      "Inspecionar placa",
+      "Verificar cabos"
+    ],
+    "teste_rapido": [
+      "Reiniciar sistema"
+    ],
+    "dica": "Relacionado ao circuito interno",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Samsung",
+    "linha": "Inverter",
+    "codigo": "E221",
+    "significado": "Sensor da unidade externa defeituoso",
+    "causas": [
+      "Sensor aberto",
+      "Sensor em curto"
+    ],
+    "diagnostico": [
+      "Medir sensor",
+      "Verificar chicote"
+    ],
+    "teste_rapido": [
+      "Substituir sensor"
+    ],
+    "dica": "Sensor da serpentina externa",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Samsung",
+    "linha": "Inverter",
+    "codigo": "E231",
+    "significado": "Erro no ventilador da unidade externa",
+    "causas": [
+      "Motor ventilador defeituoso",
+      "Placa sem acionamento"
+    ],
+    "diagnostico": [
+      "Verificar ventilador",
+      "Medir tensão"
+    ],
+    "teste_rapido": [
+      "Inspecionar ventilador"
+    ],
+    "dica": "Relacionado ao ventilador da condensadora",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Samsung",
+    "linha": "Inverter",
+    "codigo": "E462",
+    "significado": "Proteção de tensão do compressor",
+    "causas": [
+      "Queda de tensão",
+      "Falha no módulo inverter"
+    ],
+    "diagnostico": [
+      "Medir tensão de alimentação",
+      "Verificar placa"
+    ],
+    "teste_rapido": [
+      "Testar em outra rede elétrica"
+    ],
+    "dica": "Erro associado à alimentação",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Samsung",
+    "linha": "Inverter",
+    "codigo": "CF",
+    "significado": "Aviso de limpeza de filtro",
+    "causas": [
+      "Acúmulo de sujeira no filtro"
+    ],
+    "diagnostico": [
+      "Verificar filtro da evaporadora"
+    ],
+    "teste_rapido": [
+      "Limpar filtro"
+    ],
+    "dica": "Não é erro, apenas aviso de manutenção",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Electrolux",
+    "linha": "Inverter",
+    "codigo": "E2",
+    "significado": "Erro no sensor de temperatura ambiente",
+    "causas": [
+      "Sensor NTC aberto",
+      "Sensor em curto",
+      "Chicote danificado"
+    ],
+    "diagnostico": [
+      "Medir resistência do sensor",
+      "Verificar chicote",
+      "Comparar com tabela"
+    ],
+    "teste_rapido": [
+      "Substituir sensor para teste"
+    ],
+    "dica": "Sensor geralmente NTC 10k",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Electrolux",
+    "linha": "Inverter",
+    "codigo": "E3",
+    "significado": "Falha no ventilador da unidade interna",
+    "causas": [
+      "Motor ventilador defeituoso",
+      "Turbina travada",
+      "Placa sem acionamento"
+    ],
+    "diagnostico": [
+      "Verificar giro da turbina",
+      "Medir tensão no motor",
+      "Inspecionar placa"
+    ],
+    "teste_rapido": [
+      "Girar turbina manualmente"
+    ],
+    "dica": "Pode ocorrer por sujeira acumulada",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Elgin",
+    "linha": "Inverter",
+    "codigo": "E1",
+    "significado": "Erro de comunicação entre evaporadora e condensadora",
+    "causas": [
+      "Cabo de comunicação rompido",
+      "Conector solto",
+      "Placa defeituosa"
+    ],
+    "diagnostico": [
+      "Verificar continuidade do cabo",
+      "Inspecionar conectores",
+      "Testar placas"
+    ],
+    "teste_rapido": [
+      "Reapertar conexões e reiniciar"
+    ],
+    "dica": "Erro comum após manutenção",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Elgin",
+    "linha": "Inverter",
+    "codigo": "E2",
+    "significado": "Sensor de temperatura ambiente defeituoso",
+    "causas": [
+      "Sensor aberto",
+      "Sensor em curto",
+      "Chicote rompido"
+    ],
+    "diagnostico": [
+      "Medir resistência do sensor",
+      "Verificar chicote"
+    ],
+    "teste_rapido": [
+      "Substituir sensor"
+    ],
+    "dica": "Sensor NTC geralmente 10k",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Elgin",
+    "linha": "Inverter",
+    "codigo": "E4",
+    "significado": "Proteção de alta pressão",
+    "causas": [
+      "Condensador sujo",
+      "Ventilação insuficiente",
+      "Excesso de gás"
+    ],
+    "diagnostico": [
+      "Verificar pressão do sistema",
+      "Limpar condensador",
+      "Checar ventilação"
+    ],
+    "teste_rapido": [
+      "Limpar unidade externa"
+    ],
+    "dica": "Muito comum com condensadora obstruída",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Elgin",
+    "linha": "Inverter",
+    "codigo": "E6",
+    "significado": "Erro no ventilador da unidade interna",
+    "causas": [
+      "Motor ventilador defeituoso",
+      "Turbina travada",
+      "Placa defeituosa"
+    ],
+    "diagnostico": [
+      "Verificar ventilador",
+      "Medir tensão no motor",
+      "Inspecionar placa"
+    ],
+    "teste_rapido": [
+      "Girar turbina manualmente"
+    ],
+    "dica": "Relacionado ao ventilador da evaporadora",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Philco",
+    "linha": "Inverter",
+    "codigo": "E7",
+    "significado": "Erro no sensor da serpentina da evaporadora",
+    "causas": [
+      "Sensor aberto",
+      "Sensor em curto",
+      "Chicote danificado"
+    ],
+    "diagnostico": [
+      "Medir resistência do sensor",
+      "Verificar chicote",
+      "Comparar com tabela NTC"
+    ],
+    "teste_rapido": [
+      "Substituir sensor para teste"
+    ],
+    "dica": "Sensor fixado na serpentina da evaporadora",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Philco",
+    "linha": "Inverter",
+    "codigo": "E8",
+    "significado": "Proteção de sobrecarga do compressor",
+    "causas": [
+      "Compressor sobrecarregado",
+      "Pressão elevada",
+      "Placa inverter defeituosa"
+    ],
+    "diagnostico": [
+      "Medir corrente do compressor",
+      "Verificar pressão do sistema"
+    ],
+    "teste_rapido": [
+      "Desligar e religar equipamento"
+    ],
+    "dica": "Pode ocorrer com condensadora suja",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Philco",
+    "linha": "Inverter",
+    "codigo": "F1",
+    "significado": "Sensor de temperatura ambiente defeituoso",
+    "causas": [
+      "Sensor aberto",
+      "Sensor em curto",
+      "Chicote rompido"
+    ],
+    "diagnostico": [
+      "Medir sensor NTC",
+      "Verificar chicote"
+    ],
+    "teste_rapido": [
+      "Substituir sensor"
+    ],
+    "dica": "Sensor localizado na evaporadora",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Philco",
+    "linha": "Inverter",
+    "codigo": "F2",
+    "significado": "Sensor da serpentina da evaporadora defeituoso",
+    "causas": [
+      "Sensor aberto",
+      "Sensor em curto"
+    ],
+    "diagnostico": [
+      "Medir sensor da serpentina",
+      "Comparar resistência"
+    ],
+    "teste_rapido": [
+      "Substituir sensor"
+    ],
+    "dica": "Protege contra congelamento",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Philco",
+    "linha": "Inverter",
+    "codigo": "F3",
+    "significado": "Sensor da condensadora defeituoso",
+    "causas": [
+      "Sensor aberto",
+      "Sensor em curto",
+      "Chicote danificado"
+    ],
+    "diagnostico": [
+      "Medir sensor externo",
+      "Verificar chicote"
+    ],
+    "teste_rapido": [
+      "Substituir sensor"
+    ],
+    "dica": "Sensor localizado na serpentina externa",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Philco",
+    "linha": "Inverter",
+    "codigo": "P0",
+    "significado": "Proteção do módulo inverter",
+    "causas": [
+      "IPM superaquecido",
+      "Ventilação insuficiente",
+      "Placa defeituosa"
+    ],
+    "diagnostico": [
+      "Verificar ventilação da condensadora",
+      "Inspecionar módulo inverter"
+    ],
+    "teste_rapido": [
+      "Desligar equipamento e aguardar resfriamento"
+    ],
+    "dica": "Associado ao módulo IPM",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Philco",
+    "linha": "Inverter",
+    "codigo": "P1",
+    "significado": "Proteção de baixa tensão",
+    "causas": [
+      "Rede elétrica instável",
+      "Queda de tensão",
+      "Problema na fonte"
+    ],
+    "diagnostico": [
+      "Medir tensão de alimentação",
+      "Verificar fiação"
+    ],
+    "teste_rapido": [
+      "Testar em outra rede elétrica"
+    ],
+    "dica": "Comum em locais com rede fraca",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Philco",
+    "linha": "Inverter",
+    "codigo": "P2",
+    "significado": "Proteção de alta temperatura do compressor",
+    "causas": [
+      "Condensador sujo",
+      "Ventilador externo defeituoso",
+      "Pressão elevada"
+    ],
+    "diagnostico": [
+      "Limpar condensador",
+      "Verificar ventilador",
+      "Medir pressão"
+    ],
+    "teste_rapido": [
+      "Limpar unidade externa"
+    ],
+    "dica": "Alta temperatura do compressor",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Philco",
+    "linha": "Inverter",
+    "codigo": "H3",
+    "significado": "Proteção de sobrecorrente do compressor",
+    "causas": [
+      "Compressor travado",
+      "Sobrecarga elétrica"
+    ],
+    "diagnostico": [
+      "Medir corrente do compressor",
+      "Testar compressor"
+    ],
+    "teste_rapido": [
+      "Desligar e religar equipamento"
+    ],
+    "dica": "Relacionado ao circuito inverter",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Philco",
+    "linha": "Inverter",
+    "codigo": "H5",
+    "significado": "Erro no ventilador da unidade externa",
+    "causas": [
+      "Motor ventilador defeituoso",
+      "Placa sem acionamento"
+    ],
+    "diagnostico": [
+      "Verificar ventilador externo",
+      "Medir tensão no motor"
+    ],
+    "teste_rapido": [
+      "Inspecionar ventilador"
+    ],
+    "dica": "Relacionado à condensadora",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Daikin",
+    "linha": "Inverter",
+    "codigo": "A3",
+    "significado": "Falha no sistema de drenagem",
+    "causas": [
+      "Bomba de dreno defeituosa",
+      "Dreno entupido"
+    ],
+    "diagnostico": [
+      "Verificar bomba de dreno",
+      "Inspecionar tubulação"
+    ],
+    "teste_rapido": [
+      "Limpar dreno"
+    ],
+    "dica": "Pode ocorrer por sujeira no dreno",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Daikin",
+    "linha": "Inverter",
+    "codigo": "A5",
+    "significado": "Proteção contra congelamento da evaporadora",
+    "causas": [
+      "Fluxo de ar insuficiente",
+      "Sensor defeituoso"
+    ],
+    "diagnostico": [
+      "Verificar filtros",
+      "Medir sensor"
+    ],
+    "teste_rapido": [
+      "Limpar filtros"
+    ],
+    "dica": "Evaporadora pode estar congelando",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Daikin",
+    "linha": "Inverter",
+    "codigo": "A6",
+    "significado": "Erro no ventilador da unidade interna",
+    "causas": [
+      "Motor ventilador defeituoso",
+      "Placa sem acionamento"
+    ],
+    "diagnostico": [
+      "Verificar ventilador",
+      "Medir tensão no motor"
+    ],
+    "teste_rapido": [
+      "Girar turbina manualmente"
+    ],
+    "dica": "Relacionado ao ventilador da evaporadora",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Daikin",
+    "linha": "Inverter",
+    "codigo": "C4",
+    "significado": "Erro no sensor da serpentina da evaporadora",
+    "causas": [
+      "Sensor aberto",
+      "Sensor em curto"
+    ],
+    "diagnostico": [
+      "Medir resistência do sensor",
+      "Comparar com tabela"
+    ],
+    "teste_rapido": [
+      "Substituir sensor"
+    ],
+    "dica": "Sensor localizado na serpentina",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Daikin",
+    "linha": "Inverter",
+    "codigo": "C9",
+    "significado": "Erro no sensor de temperatura ambiente",
+    "causas": [
+      "Sensor defeituoso",
+      "Chicote rompido"
+    ],
+    "diagnostico": [
+      "Medir sensor",
+      "Verificar chicote"
+    ],
+    "teste_rapido": [
+      "Substituir sensor"
+    ],
+    "dica": "Sensor localizado na evaporadora",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Daikin",
+    "linha": "Inverter",
+    "codigo": "E1",
+    "significado": "Erro na placa da unidade externa",
+    "causas": [
+      "Placa externa defeituosa",
+      "Falha de comunicação"
+    ],
+    "diagnostico": [
+      "Verificar placa externa",
+      "Inspecionar conexões"
+    ],
+    "teste_rapido": [
+      "Reiniciar sistema"
+    ],
+    "dica": "Relacionado à condensadora",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Daikin",
+    "linha": "Inverter",
+    "codigo": "E5",
+    "significado": "Proteção de sobrecorrente do compressor",
+    "causas": [
+      "Compressor travado",
+      "Módulo inverter defeituoso"
+    ],
+    "diagnostico": [
+      "Medir corrente",
+      "Testar compressor"
+    ],
+    "teste_rapido": [
+      "Desligar e religar equipamento"
+    ],
+    "dica": "Erro do circuito inverter",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Daikin",
+    "linha": "Inverter",
+    "codigo": "J3",
+    "significado": "Erro no sensor de descarga do compressor",
+    "causas": [
+      "Sensor aberto",
+      "Sensor em curto"
+    ],
+    "diagnostico": [
+      "Medir sensor",
+      "Verificar chicote"
+    ],
+    "teste_rapido": [
+      "Substituir sensor"
+    ],
+    "dica": "Proteção térmica do compressor",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Daikin",
+    "linha": "Inverter",
+    "codigo": "L5",
+    "significado": "Proteção do módulo inverter",
+    "causas": [
+      "IPM superaquecido",
+      "Falha no módulo"
+    ],
+    "diagnostico": [
+      "Verificar ventilação",
+      "Inspecionar placa inverter"
+    ],
+    "teste_rapido": [
+      "Desligar e aguardar resfriar"
+    ],
+    "dica": "Erro do módulo IPM",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Fujitsu",
+    "linha": "Inverter",
+    "codigo": "A1",
+    "significado": "Falha na placa eletrônica da unidade interna",
+    "causas": [
+      "Placa defeituosa",
+      "Erro interno de controle"
+    ],
+    "diagnostico": [
+      "Verificar placa eletrônica",
+      "Reiniciar equipamento"
+    ],
+    "teste_rapido": [
+      "Desligar energia por alguns minutos"
+    ],
+    "dica": "Erro interno da unidade",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Fujitsu",
+    "linha": "Inverter",
+    "codigo": "A2",
+    "significado": "Erro no sistema de drenagem",
+    "causas": [
+      "Dreno entupido",
+      "Bomba de dreno defeituosa"
+    ],
+    "diagnostico": [
+      "Verificar tubulação de dreno",
+      "Inspecionar bomba"
+    ],
+    "teste_rapido": [
+      "Limpar dreno"
+    ],
+    "dica": "Comum quando há sujeira na bandeja",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Fujitsu",
+    "linha": "Inverter",
+    "codigo": "A3",
+    "significado": "Proteção do nível de água da bandeja",
+    "causas": [
+      "Sensor de nível acionado",
+      "Dreno bloqueado"
+    ],
+    "diagnostico": [
+      "Verificar sensor de nível",
+      "Limpar dreno"
+    ],
+    "teste_rapido": [
+      "Limpar tubulação"
+    ],
+    "dica": "Relacionado ao sistema de drenagem",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Fujitsu",
+    "linha": "Inverter",
+    "codigo": "A5",
+    "significado": "Proteção contra congelamento da evaporadora",
+    "causas": [
+      "Fluxo de ar insuficiente",
+      "Sensor defeituoso",
+      "Filtro sujo"
+    ],
+    "diagnostico": [
+      "Verificar filtros",
+      "Medir sensor"
+    ],
+    "teste_rapido": [
+      "Limpar filtros"
+    ],
+    "dica": "Evaporadora pode estar congelando",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Fujitsu",
+    "linha": "Inverter",
+    "codigo": "A6",
+    "significado": "Erro no ventilador da unidade interna",
+    "causas": [
+      "Motor ventilador defeituoso",
+      "Placa sem acionamento"
+    ],
+    "diagnostico": [
+      "Verificar ventilador",
+      "Medir tensão no motor"
+    ],
+    "teste_rapido": [
+      "Girar turbina manualmente"
+    ],
+    "dica": "Relacionado ao ventilador da evaporadora",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Fujitsu",
+    "linha": "Inverter",
+    "codigo": "C0",
+    "significado": "Erro de comunicação interna",
+    "causas": [
+      "Falha de comunicação",
+      "Placa defeituosa"
+    ],
+    "diagnostico": [
+      "Verificar cabos internos",
+      "Testar placa"
+    ],
+    "teste_rapido": [
+      "Reiniciar equipamento"
+    ],
+    "dica": "Relacionado ao circuito eletrônico",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Fujitsu",
+    "linha": "Inverter",
+    "codigo": "C1",
+    "significado": "Erro no sensor de temperatura ambiente",
+    "causas": [
+      "Sensor aberto",
+      "Sensor em curto",
+      "Chicote danificado"
+    ],
+    "diagnostico": [
+      "Medir sensor NTC",
+      "Verificar chicote"
+    ],
+    "teste_rapido": [
+      "Substituir sensor"
+    ],
+    "dica": "Sensor localizado na evaporadora",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Fujitsu",
+    "linha": "Inverter",
+    "codigo": "C2",
+    "significado": "Erro no sensor da serpentina da evaporadora",
+    "causas": [
+      "Sensor aberto",
+      "Sensor em curto"
+    ],
+    "diagnostico": [
+      "Medir resistência do sensor",
+      "Comparar valores"
+    ],
+    "teste_rapido": [
+      "Substituir sensor"
+    ],
+    "dica": "Sensor preso à serpentina",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Fujitsu",
+    "linha": "Inverter",
+    "codigo": "E5",
+    "significado": "Proteção de sobrecorrente do compressor",
+    "causas": [
+      "Compressor travado",
+      "Módulo inverter defeituoso"
+    ],
+    "diagnostico": [
+      "Medir corrente do compressor",
+      "Testar compressor"
+    ],
+    "teste_rapido": [
+      "Desligar e religar equipamento"
+    ],
+    "dica": "Erro do circuito inverter",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Carrier",
+    "linha": "Inverter",
+    "codigo": "E1",
+    "significado": "Falha de comunicação entre evaporadora e condensadora",
+    "causas": [
+      "Cabo de comunicação rompido",
+      "Conector solto",
+      "Placa defeituosa"
+    ],
+    "diagnostico": [
+      "Verificar continuidade do cabo",
+      "Inspecionar conectores",
+      "Testar placas"
+    ],
+    "teste_rapido": [
+      "Reapertar conectores e reiniciar"
+    ],
+    "dica": "Erro comum após instalação",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Carrier",
+    "linha": "Inverter",
+    "codigo": "E2",
+    "significado": "Sensor de temperatura ambiente defeituoso",
+    "causas": [
+      "Sensor aberto",
+      "Sensor em curto",
+      "Chicote danificado"
+    ],
+    "diagnostico": [
+      "Medir sensor NTC",
+      "Verificar chicote"
+    ],
+    "teste_rapido": [
+      "Substituir sensor"
+    ],
+    "dica": "Sensor localizado na evaporadora",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Carrier",
+    "linha": "Inverter",
+    "codigo": "E3",
+    "significado": "Proteção de baixa pressão",
+    "causas": [
+      "Vazamento de refrigerante",
+      "Carga insuficiente"
+    ],
+    "diagnostico": [
+      "Verificar pressão de sucção",
+      "Procurar vazamentos"
+    ],
+    "teste_rapido": [
+      "Verificar gelo na evaporadora"
+    ],
+    "dica": "Comum quando há vazamento",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Carrier",
+    "linha": "Inverter",
+    "codigo": "E4",
+    "significado": "Proteção de alta pressão",
+    "causas": [
+      "Condensador sujo",
+      "Ventilação insuficiente",
+      "Excesso de gás"
+    ],
+    "diagnostico": [
+      "Verificar pressão",
+      "Limpar condensador"
+    ],
+    "teste_rapido": [
+      "Limpar unidade externa"
+    ],
+    "dica": "Condensadora pode estar obstruída",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Carrier",
+    "linha": "Inverter",
+    "codigo": "E5",
+    "significado": "Proteção de sobrecorrente do compressor",
+    "causas": [
+      "Compressor travado",
+      "Placa inverter defeituosa"
+    ],
+    "diagnostico": [
+      "Medir corrente do compressor",
+      "Testar compressor"
+    ],
+    "teste_rapido": [
+      "Desligar e religar equipamento"
+    ],
+    "dica": "Erro do circuito inverter",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Springer",
+    "linha": "Inverter",
+    "codigo": "E2",
+    "significado": "Sensor de temperatura ambiente defeituoso",
+    "causas": [
+      "Sensor aberto",
+      "Sensor em curto"
+    ],
+    "diagnostico": [
+      "Medir resistência do sensor",
+      "Verificar chicote"
+    ],
+    "teste_rapido": [
+      "Substituir sensor"
+    ],
+    "dica": "Sensor NTC na evaporadora",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Springer",
+    "linha": "Inverter",
+    "codigo": "E3",
+    "significado": "Falha no ventilador da evaporadora",
+    "causas": [
+      "Motor ventilador defeituoso",
+      "Turbina travada"
+    ],
+    "diagnostico": [
+      "Verificar giro da turbina",
+      "Medir tensão no motor"
+    ],
+    "teste_rapido": [
+      "Girar turbina manualmente"
+    ],
+    "dica": "Pode ocorrer com sujeira acumulada",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Springer",
+    "linha": "Inverter",
+    "codigo": "P1",
+    "significado": "Proteção de baixa tensão",
+    "causas": [
+      "Rede elétrica instável",
+      "Queda de tensão"
+    ],
+    "diagnostico": [
+      "Medir tensão da rede"
+    ],
+    "teste_rapido": [
+      "Testar em outra tomada"
+    ],
+    "dica": "Relacionado à alimentação elétrica",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Gree",
+    "linha": "Inverter",
+    "codigo": "E8",
+    "significado": "Proteção de sobrecarga do compressor",
+    "causas": [
+      "Compressor sobrecarregado",
+      "Pressão elevada",
+      "Ventilação insuficiente"
+    ],
+    "diagnostico": [
+      "Medir corrente do compressor",
+      "Verificar pressão do sistema",
+      "Inspecionar ventilação"
+    ],
+    "teste_rapido": [
+      "Desligar e religar equipamento"
+    ],
+    "dica": "Pode ocorrer com condensadora suja",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Gree",
+    "linha": "Inverter",
+    "codigo": "E9",
+    "significado": "Proteção de transbordamento de água",
+    "causas": [
+      "Dreno entupido",
+      "Bandeja cheia",
+      "Sensor de nível acionado"
+    ],
+    "diagnostico": [
+      "Verificar dreno",
+      "Inspecionar bandeja",
+      "Testar sensor de nível"
+    ],
+    "teste_rapido": [
+      "Limpar dreno"
+    ],
+    "dica": "Relacionado ao sistema de drenagem",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Gree",
+    "linha": "Inverter",
+    "codigo": "EE",
+    "significado": "Erro de EEPROM",
+    "causas": [
+      "Falha na memória da placa",
+      "Placa eletrônica defeituosa"
+    ],
+    "diagnostico": [
+      "Reiniciar equipamento",
+      "Verificar placa eletrônica"
+    ],
+    "teste_rapido": [
+      "Desligar energia por alguns minutos"
+    ],
+    "dica": "Erro interno da placa",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Gree",
+    "linha": "Inverter",
+    "codigo": "F1",
+    "significado": "Erro no sensor de temperatura ambiente",
+    "causas": [
+      "Sensor aberto",
+      "Sensor em curto",
+      "Chicote danificado"
+    ],
+    "diagnostico": [
+      "Medir resistência do sensor",
+      "Verificar chicote"
+    ],
+    "teste_rapido": [
+      "Substituir sensor"
+    ],
+    "dica": "Sensor localizado na evaporadora",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Gree",
+    "linha": "Inverter",
+    "codigo": "F2",
+    "significado": "Erro no sensor da serpentina da evaporadora",
+    "causas": [
+      "Sensor aberto",
+      "Sensor em curto"
+    ],
+    "diagnostico": [
+      "Medir sensor da serpentina",
+      "Comparar resistência"
+    ],
+    "teste_rapido": [
+      "Substituir sensor"
+    ],
+    "dica": "Proteção contra congelamento",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Gree",
+    "linha": "Inverter",
+    "codigo": "F3",
+    "significado": "Erro no sensor da condensadora",
+    "causas": [
+      "Sensor aberto",
+      "Sensor em curto",
+      "Chicote danificado"
+    ],
+    "diagnostico": [
+      "Medir sensor externo",
+      "Verificar chicote"
+    ],
+    "teste_rapido": [
+      "Substituir sensor"
+    ],
+    "dica": "Sensor da serpentina externa",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Gree",
+    "linha": "Inverter",
+    "codigo": "F4",
+    "significado": "Erro no sensor de descarga do compressor",
+    "causas": [
+      "Sensor defeituoso",
+      "Chicote rompido"
+    ],
+    "diagnostico": [
+      "Medir sensor",
+      "Verificar chicote"
+    ],
+    "teste_rapido": [
+      "Substituir sensor"
+    ],
+    "dica": "Proteção térmica do compressor",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Gree",
+    "linha": "Inverter",
+    "codigo": "F5",
+    "significado": "Erro no sensor do módulo inverter",
+    "causas": [
+      "Sensor defeituoso",
+      "Placa inverter defeituosa"
+    ],
+    "diagnostico": [
+      "Verificar sensor",
+      "Inspecionar módulo inverter"
+    ],
+    "teste_rapido": [
+      "Reiniciar equipamento"
+    ],
+    "dica": "Relacionado ao módulo IPM",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Gree",
+    "linha": "Inverter",
+    "codigo": "H1",
+    "significado": "Ciclo de degelo ativo",
+    "causas": [
+      "Operação normal do equipamento",
+      "Temperatura externa baixa"
+    ],
+    "diagnostico": [
+      "Aguardar término do ciclo"
+    ],
+    "teste_rapido": [
+      "Aguardar funcionamento normal"
+    ],
+    "dica": "Não é falha, apenas modo de operação",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Gree",
+    "linha": "Inverter",
+    "codigo": "H2",
+    "significado": "Proteção de temperatura do evaporador",
+    "causas": [
+      "Fluxo de ar insuficiente",
+      "Sensor defeituoso"
+    ],
+    "diagnostico": [
+      "Verificar ventilador",
+      "Limpar filtros",
+      "Medir sensor"
+    ],
+    "teste_rapido": [
+      "Limpar filtros"
+    ],
+    "dica": "Pode ocorrer com evaporador congelando",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Gree",
+    "linha": "Inverter",
+    "codigo": "P2",
+    "significado": "Proteção de alta temperatura do compressor",
+    "causas": [
+      "Condensador sujo",
+      "Ventilador externo defeituoso",
+      "Pressão elevada"
+    ],
+    "diagnostico": [
+      "Limpar condensador",
+      "Verificar ventilador",
+      "Medir pressão"
+    ],
+    "teste_rapido": [
+      "Limpar unidade externa"
+    ],
+    "dica": "Alta temperatura do compressor",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Gree",
+    "linha": "Inverter",
+    "codigo": "P3",
+    "significado": "Proteção de corrente do compressor",
+    "causas": [
+      "Sobrecorrente",
+      "Compressor travado",
+      "Placa inverter defeituosa"
+    ],
+    "diagnostico": [
+      "Medir corrente do compressor",
+      "Testar compressor"
+    ],
+    "teste_rapido": [
+      "Desligar e religar sistema"
+    ],
+    "dica": "Erro relacionado ao compressor",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Gree",
+    "linha": "Inverter",
+    "codigo": "P4",
+    "significado": "Proteção do módulo inverter",
+    "causas": [
+      "IPM superaquecido",
+      "Falha no módulo"
+    ],
+    "diagnostico": [
+      "Verificar ventilação",
+      "Inspecionar placa inverter"
+    ],
+    "teste_rapido": [
+      "Desligar equipamento e aguardar resfriar"
+    ],
+    "dica": "Erro do módulo IPM",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Midea",
+    "linha": "Inverter",
+    "codigo": "P7",
+    "significado": "Proteção de tensão elevada",
+    "causas": [
+      "Tensão da rede alta",
+      "Falha na fonte da placa"
+    ],
+    "diagnostico": [
+      "Medir tensão da rede",
+      "Verificar fonte da placa"
+    ],
+    "teste_rapido": [
+      "Testar em outra rede elétrica"
+    ],
+    "dica": "Relacionado à alimentação elétrica",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Midea",
+    "linha": "Inverter",
+    "codigo": "P8",
+    "significado": "Proteção de tensão baixa",
+    "causas": [
+      "Queda de tensão",
+      "Rede elétrica instável"
+    ],
+    "diagnostico": [
+      "Medir tensão da rede",
+      "Verificar fiação"
+    ],
+    "teste_rapido": [
+      "Testar em outra tomada"
+    ],
+    "dica": "Comum em redes fracas",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Midea",
+    "linha": "Inverter",
+    "codigo": "F4",
+    "significado": "Erro no sensor de descarga do compressor",
+    "causas": [
+      "Sensor defeituoso",
+      "Chicote rompido"
+    ],
+    "diagnostico": [
+      "Medir sensor",
+      "Verificar chicote"
+    ],
+    "teste_rapido": [
+      "Substituir sensor"
+    ],
+    "dica": "Proteção térmica do compressor",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Midea",
+    "linha": "Inverter",
+    "codigo": "F5",
+    "significado": "Erro no sensor do módulo inverter",
+    "causas": [
+      "Sensor defeituoso",
+      "Placa inverter defeituosa"
+    ],
+    "diagnostico": [
+      "Verificar sensor",
+      "Inspecionar placa inverter"
+    ],
+    "teste_rapido": [
+      "Reiniciar equipamento"
+    ],
+    "dica": "Relacionado ao módulo IPM",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Midea",
+    "linha": "Inverter",
+    "codigo": "H4",
+    "significado": "Proteção de temperatura do condensador",
+    "causas": [
+      "Condensador sujo",
+      "Ventilador externo defeituoso"
+    ],
+    "diagnostico": [
+      "Limpar condensador",
+      "Verificar ventilador"
+    ],
+    "teste_rapido": [
+      "Limpar unidade externa"
+    ],
+    "dica": "Temperatura elevada na condensadora",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Midea",
+    "linha": "Inverter",
+    "codigo": "H5",
+    "significado": "Proteção de corrente do ventilador",
+    "causas": [
+      "Motor ventilador defeituoso",
+      "Placa sem acionamento"
+    ],
+    "diagnostico": [
+      "Verificar ventilador",
+      "Medir tensão no motor"
+    ],
+    "teste_rapido": [
+      "Inspecionar ventilador"
+    ],
+    "dica": "Relacionado ao ventilador",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Midea",
+    "linha": "Inverter",
+    "codigo": "H7",
+    "significado": "Erro de sensor do módulo inverter",
+    "causas": [
+      "Sensor defeituoso",
+      "Placa inverter defeituosa"
+    ],
+    "diagnostico": [
+      "Verificar sensor",
+      "Inspecionar módulo"
+    ],
+    "teste_rapido": [
+      "Reiniciar equipamento"
+    ],
+    "dica": "Relacionado ao controle eletrônico",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Midea",
+    "linha": "Inverter",
+    "codigo": "EL",
+    "significado": "Proteção de bloqueio do compressor",
+    "causas": [
+      "Compressor travado",
+      "Falha na placa"
+    ],
+    "diagnostico": [
+      "Testar compressor",
+      "Verificar placa"
+    ],
+    "teste_rapido": [
+      "Desligar e religar equipamento"
+    ],
+    "dica": "Pode indicar falha mecânica",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Midea",
+    "linha": "Inverter",
+    "codigo": "EH",
+    "significado": "Proteção de temperatura do módulo",
+    "causas": [
+      "Superaquecimento",
+      "Ventilação insuficiente"
+    ],
+    "diagnostico": [
+      "Verificar ventilação",
+      "Inspecionar dissipador"
+    ],
+    "teste_rapido": [
+      "Desligar e aguardar resfriar"
+    ],
+    "dica": "Erro térmico do módulo inverter",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Hitachi",
+    "linha": "Inverter",
+    "codigo": "01",
+    "significado": "Erro de comunicação entre unidades",
+    "causas": [
+      "Cabo de comunicação rompido",
+      "Conector solto",
+      "Placa defeituosa"
+    ],
+    "diagnostico": [
+      "Verificar continuidade do cabo",
+      "Inspecionar conectores"
+    ],
+    "teste_rapido": [
+      "Reapertar conexões e reiniciar"
+    ],
+    "dica": "Erro comum após instalação",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Hitachi",
+    "linha": "Inverter",
+    "codigo": "02",
+    "significado": "Sensor de temperatura ambiente defeituoso",
+    "causas": [
+      "Sensor aberto",
+      "Sensor em curto"
+    ],
+    "diagnostico": [
+      "Medir resistência do sensor",
+      "Verificar chicote"
+    ],
+    "teste_rapido": [
+      "Substituir sensor"
+    ],
+    "dica": "Sensor NTC na evaporadora",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Hitachi",
+    "linha": "Inverter",
+    "codigo": "03",
+    "significado": "Proteção de alta pressão",
+    "causas": [
+      "Condensador sujo",
+      "Ventilação insuficiente",
+      "Excesso de gás"
+    ],
+    "diagnostico": [
+      "Verificar pressão",
+      "Limpar condensador"
+    ],
+    "teste_rapido": [
+      "Limpar unidade externa"
+    ],
+    "dica": "Condensadora pode estar obstruída",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Hitachi",
+    "linha": "Inverter",
+    "codigo": "04",
+    "significado": "Proteção de baixa pressão",
+    "causas": [
+      "Vazamento de refrigerante",
+      "Carga insuficiente"
+    ],
+    "diagnostico": [
+      "Verificar pressão de sucção",
+      "Procurar vazamentos"
+    ],
+    "teste_rapido": [
+      "Verificar gelo na evaporadora"
+    ],
+    "dica": "Comum quando há vazamento",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Hisense",
+    "linha": "Inverter",
+    "codigo": "E2",
+    "significado": "Sensor de temperatura ambiente defeituoso",
+    "causas": [
+      "Sensor aberto",
+      "Sensor em curto"
+    ],
+    "diagnostico": [
+      "Medir sensor",
+      "Verificar chicote"
+    ],
+    "teste_rapido": [
+      "Substituir sensor"
+    ],
+    "dica": "Sensor NTC",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Hisense",
+    "linha": "Inverter",
+    "codigo": "E3",
+    "significado": "Erro no ventilador da evaporadora",
+    "causas": [
+      "Motor ventilador defeituoso",
+      "Turbina travada"
+    ],
+    "diagnostico": [
+      "Verificar ventilador",
+      "Medir tensão no motor"
+    ],
+    "teste_rapido": [
+      "Girar turbina manualmente"
+    ],
+    "dica": "Pode ocorrer por sujeira",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "TCL",
+    "linha": "Inverter",
+    "codigo": "E1",
+    "significado": "Erro de comunicação entre unidades",
+    "causas": [
+      "Cabo de comunicação rompido",
+      "Conector solto",
+      "Placa defeituosa"
+    ],
+    "diagnostico": [
+      "Verificar continuidade do cabo",
+      "Inspecionar conectores"
+    ],
+    "teste_rapido": [
+      "Reapertar conexões"
+    ],
+    "dica": "Erro comum após instalação",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "TCL",
+    "linha": "Inverter",
+    "codigo": "E2",
+    "significado": "Sensor de temperatura ambiente defeituoso",
+    "causas": [
+      "Sensor aberto",
+      "Sensor em curto"
+    ],
+    "diagnostico": [
+      "Medir sensor NTC",
+      "Verificar chicote"
+    ],
+    "teste_rapido": [
+      "Substituir sensor"
+    ],
+    "dica": "Sensor localizado na evaporadora",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "TCL",
+    "linha": "Inverter",
+    "codigo": "E3",
+    "significado": "Falha no ventilador da evaporadora",
+    "causas": [
+      "Motor ventilador defeituoso",
+      "Turbina travada"
+    ],
+    "diagnostico": [
+      "Verificar ventilador",
+      "Medir tensão"
+    ],
+    "teste_rapido": [
+      "Girar turbina manualmente"
+    ],
+    "dica": "Pode ocorrer com sujeira acumulada",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "TCL",
+    "linha": "Inverter",
+    "codigo": "E5",
+    "significado": "Proteção de sobrecorrente do compressor",
+    "causas": [
+      "Compressor travado",
+      "Placa inverter defeituosa"
+    ],
+    "diagnostico": [
+      "Medir corrente",
+      "Testar compressor"
+    ],
+    "teste_rapido": [
+      "Desligar e religar"
+    ],
+    "dica": "Erro relacionado ao compressor",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Agratto",
+    "linha": "Inverter",
+    "codigo": "E2",
+    "significado": "Sensor de temperatura ambiente defeituoso",
+    "causas": [
+      "Sensor aberto",
+      "Sensor em curto"
+    ],
+    "diagnostico": [
+      "Medir sensor",
+      "Verificar chicote"
+    ],
+    "teste_rapido": [
+      "Substituir sensor"
+    ],
+    "dica": "Sensor NTC",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Agratto",
+    "linha": "Inverter",
+    "codigo": "E3",
+    "significado": "Proteção de baixa pressão",
+    "causas": [
+      "Vazamento de refrigerante",
+      "Carga insuficiente"
+    ],
+    "diagnostico": [
+      "Verificar pressão de sucção",
+      "Procurar vazamentos"
+    ],
+    "teste_rapido": [
+      "Verificar gelo na evaporadora"
+    ],
+    "dica": "Comum quando há vazamento",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Agratto",
+    "linha": "Inverter",
+    "codigo": "E4",
+    "significado": "Proteção de alta pressão",
+    "causas": [
+      "Condensador sujo",
+      "Ventilação insuficiente"
+    ],
+    "diagnostico": [
+      "Verificar pressão",
+      "Limpar condensador"
+    ],
+    "teste_rapido": [
+      "Limpar unidade externa"
+    ],
+    "dica": "Condensadora pode estar obstruída",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Elgin",
+    "linha": "Inverter",
+    "codigo": "E5",
+    "significado": "Proteção de sobrecorrente do compressor",
+    "causas": [
+      "Compressor travado",
+      "Placa inverter defeituosa",
+      "Sobrecarga elétrica"
+    ],
+    "diagnostico": [
+      "Medir corrente do compressor",
+      "Testar compressor",
+      "Inspecionar placa"
+    ],
+    "teste_rapido": [
+      "Desligar e religar equipamento"
+    ],
+    "dica": "Pode indicar falha no compressor",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Elgin",
+    "linha": "Inverter",
+    "codigo": "E7",
+    "significado": "Erro no sensor da serpentina da evaporadora",
+    "causas": [
+      "Sensor aberto",
+      "Sensor em curto",
+      "Chicote rompido"
+    ],
+    "diagnostico": [
+      "Medir resistência do sensor",
+      "Verificar chicote"
+    ],
+    "teste_rapido": [
+      "Substituir sensor"
+    ],
+    "dica": "Sensor fixado na serpentina",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Elgin",
+    "linha": "Inverter",
+    "codigo": "F1",
+    "significado": "Sensor de temperatura ambiente defeituoso",
+    "causas": [
+      "Sensor aberto",
+      "Sensor em curto"
+    ],
+    "diagnostico": [
+      "Medir sensor NTC",
+      "Verificar chicote"
+    ],
+    "teste_rapido": [
+      "Substituir sensor"
+    ],
+    "dica": "Sensor localizado na evaporadora",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Elgin",
+    "linha": "Inverter",
+    "codigo": "F2",
+    "significado": "Sensor da serpentina da evaporadora defeituoso",
+    "causas": [
+      "Sensor aberto",
+      "Sensor em curto"
+    ],
+    "diagnostico": [
+      "Medir sensor",
+      "Comparar resistência"
+    ],
+    "teste_rapido": [
+      "Substituir sensor"
+    ],
+    "dica": "Proteção contra congelamento",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Elgin",
+    "linha": "Inverter",
+    "codigo": "F3",
+    "significado": "Sensor da condensadora defeituoso",
+    "causas": [
+      "Sensor aberto",
+      "Sensor em curto",
+      "Chicote danificado"
+    ],
+    "diagnostico": [
+      "Medir sensor externo",
+      "Verificar chicote"
+    ],
+    "teste_rapido": [
+      "Substituir sensor"
+    ],
+    "dica": "Sensor na serpentina externa",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Elgin",
+    "linha": "Inverter",
+    "codigo": "P0",
+    "significado": "Proteção do módulo inverter",
+    "causas": [
+      "IPM superaquecido",
+      "Falha na placa"
+    ],
+    "diagnostico": [
+      "Verificar ventilação",
+      "Inspecionar placa inverter"
+    ],
+    "teste_rapido": [
+      "Desligar e aguardar resfriar"
+    ],
+    "dica": "Erro do módulo IPM",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Elgin",
+    "linha": "Inverter",
+    "codigo": "P1",
+    "significado": "Proteção de baixa tensão",
+    "causas": [
+      "Queda de tensão",
+      "Rede elétrica instável"
+    ],
+    "diagnostico": [
+      "Medir tensão de alimentação"
+    ],
+    "teste_rapido": [
+      "Testar em outra rede"
+    ],
+    "dica": "Relacionado à alimentação elétrica",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Elgin",
+    "linha": "Inverter",
+    "codigo": "P2",
+    "significado": "Proteção de alta temperatura do compressor",
+    "causas": [
+      "Condensador sujo",
+      "Ventilador externo defeituoso"
+    ],
+    "diagnostico": [
+      "Limpar condensador",
+      "Verificar ventilador"
+    ],
+    "teste_rapido": [
+      "Limpar unidade externa"
+    ],
+    "dica": "Alta temperatura do compressor",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Elgin",
+    "linha": "Inverter",
+    "codigo": "P3",
+    "significado": "Proteção de corrente do compressor",
+    "causas": [
+      "Sobrecorrente",
+      "Compressor travado"
+    ],
+    "diagnostico": [
+      "Medir corrente do compressor",
+      "Testar compressor"
+    ],
+    "teste_rapido": [
+      "Desligar e religar sistema"
+    ],
+    "dica": "Relacionado ao compressor",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Elgin",
+    "linha": "Inverter",
+    "codigo": "H3",
+    "significado": "Proteção de sobrecorrente",
+    "causas": [
+      "Sobrecarga elétrica",
+      "Compressor travado"
+    ],
+    "diagnostico": [
+      "Medir corrente",
+      "Verificar compressor"
+    ],
+    "teste_rapido": [
+      "Reiniciar equipamento"
+    ],
+    "dica": "Erro relacionado à proteção elétrica",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Elgin",
+    "linha": "Inverter",
+    "codigo": "H5",
+    "significado": "Erro no ventilador da condensadora",
+    "causas": [
+      "Motor ventilador defeituoso",
+      "Placa sem acionamento"
+    ],
+    "diagnostico": [
+      "Verificar ventilador externo",
+      "Medir tensão"
+    ],
+    "teste_rapido": [
+      "Inspecionar ventilador"
+    ],
+    "dica": "Relacionado à unidade externa",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Komeco",
+    "linha": "Inverter",
+    "codigo": "E2",
+    "significado": "Sensor de temperatura ambiente defeituoso",
+    "causas": [
+      "Sensor aberto",
+      "Sensor em curto"
+    ],
+    "diagnostico": [
+      "Medir sensor NTC",
+      "Verificar chicote"
+    ],
+    "teste_rapido": [
+      "Substituir sensor"
+    ],
+    "dica": "Sensor localizado na evaporadora",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Komeco",
+    "linha": "Inverter",
+    "codigo": "E3",
+    "significado": "Proteção de baixa pressão",
+    "causas": [
+      "Vazamento de refrigerante",
+      "Carga insuficiente"
+    ],
+    "diagnostico": [
+      "Verificar pressão de sucção",
+      "Procurar vazamentos"
+    ],
+    "teste_rapido": [
+      "Verificar gelo na evaporadora"
+    ],
+    "dica": "Comum quando há vazamento",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Komeco",
+    "linha": "Inverter",
+    "codigo": "E4",
+    "significado": "Proteção de alta pressão",
+    "causas": [
+      "Condensador sujo",
+      "Ventilação insuficiente"
+    ],
+    "diagnostico": [
+      "Verificar pressão",
+      "Limpar condensador"
+    ],
+    "teste_rapido": [
+      "Limpar unidade externa"
+    ],
+    "dica": "Condensadora pode estar obstruída",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Komeco",
+    "linha": "Inverter",
+    "codigo": "P1",
+    "significado": "Proteção de baixa tensão",
+    "causas": [
+      "Rede elétrica instável",
+      "Queda de tensão"
+    ],
+    "diagnostico": [
+      "Medir tensão da rede"
+    ],
+    "teste_rapido": [
+      "Testar em outra tomada"
+    ],
+    "dica": "Relacionado à alimentação elétrica",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Rheem",
+    "linha": "Inverter",
+    "codigo": "E1",
+    "significado": "Erro de comunicação entre evaporadora e condensadora",
+    "causas": [
+      "Cabo rompido",
+      "Conector solto",
+      "Placa defeituosa"
+    ],
+    "diagnostico": [
+      "Verificar cabo de comunicação",
+      "Inspecionar conectores"
+    ],
+    "teste_rapido": [
+      "Reapertar conexões"
+    ],
+    "dica": "Erro comum após instalação",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Rheem",
+    "linha": "Inverter",
+    "codigo": "E2",
+    "significado": "Sensor de temperatura ambiente defeituoso",
+    "causas": [
+      "Sensor aberto",
+      "Sensor em curto"
+    ],
+    "diagnostico": [
+      "Medir sensor",
+      "Verificar chicote"
+    ],
+    "teste_rapido": [
+      "Substituir sensor"
+    ],
+    "dica": "Sensor NTC",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Rheem",
+    "linha": "Inverter",
+    "codigo": "P2",
+    "significado": "Proteção de alta temperatura do compressor",
+    "causas": [
+      "Condensador sujo",
+      "Ventilador externo defeituoso"
+    ],
+    "diagnostico": [
+      "Limpar condensador",
+      "Verificar ventilador"
+    ],
+    "teste_rapido": [
+      "Limpar unidade externa"
+    ],
+    "dica": "Temperatura elevada do compressor",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Rheem",
+    "linha": "Inverter",
+    "codigo": "P4",
+    "significado": "Proteção do módulo inverter",
+    "causas": [
+      "IPM superaquecido",
+      "Falha na placa"
+    ],
+    "diagnostico": [
+      "Verificar ventilação",
+      "Inspecionar placa inverter"
+    ],
+    "teste_rapido": [
+      "Desligar e aguardar resfriar"
+    ],
+    "dica": "Erro do módulo IPM",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "York",
+    "linha": "Inverter",
+    "codigo": "E0",
+    "significado": "Erro de comunicação entre unidades",
+    "causas": [
+      "Cabo de comunicação rompido",
+      "Conector solto",
+      "Placa defeituosa"
+    ],
+    "diagnostico": [
+      "Verificar continuidade do cabo",
+      "Inspecionar conectores"
+    ],
+    "teste_rapido": [
+      "Reapertar conexões e reiniciar"
+    ],
+    "dica": "Erro comum após instalação",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "York",
+    "linha": "Inverter",
+    "codigo": "E1",
+    "significado": "Sensor de temperatura ambiente defeituoso",
+    "causas": [
+      "Sensor aberto",
+      "Sensor em curto"
+    ],
+    "diagnostico": [
+      "Medir sensor NTC",
+      "Verificar chicote"
+    ],
+    "teste_rapido": [
+      "Substituir sensor"
+    ],
+    "dica": "Sensor localizado na evaporadora",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "York",
+    "linha": "Inverter",
+    "codigo": "E3",
+    "significado": "Proteção de alta pressão",
+    "causas": [
+      "Condensador sujo",
+      "Ventilação insuficiente",
+      "Excesso de gás"
+    ],
+    "diagnostico": [
+      "Verificar pressão",
+      "Limpar condensador"
+    ],
+    "teste_rapido": [
+      "Limpar unidade externa"
+    ],
+    "dica": "Condensadora pode estar obstruída",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "York",
+    "linha": "Inverter",
+    "codigo": "P1",
+    "significado": "Proteção de baixa tensão",
+    "causas": [
+      "Rede elétrica instável",
+      "Queda de tensão"
+    ],
+    "diagnostico": [
+      "Medir tensão da rede"
+    ],
+    "teste_rapido": [
+      "Testar em outra tomada"
+    ],
+    "dica": "Relacionado à alimentação elétrica",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Trane",
+    "linha": "Inverter",
+    "codigo": "E1",
+    "significado": "Erro de comunicação entre unidades",
+    "causas": [
+      "Cabo rompido",
+      "Conector solto",
+      "Placa defeituosa"
+    ],
+    "diagnostico": [
+      "Verificar cabo de comunicação",
+      "Inspecionar conectores"
+    ],
+    "teste_rapido": [
+      "Reapertar conexões"
+    ],
+    "dica": "Erro comum após instalação",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Trane",
+    "linha": "Inverter",
+    "codigo": "E2",
+    "significado": "Sensor de temperatura ambiente defeituoso",
+    "causas": [
+      "Sensor aberto",
+      "Sensor em curto"
+    ],
+    "diagnostico": [
+      "Medir sensor",
+      "Verificar chicote"
+    ],
+    "teste_rapido": [
+      "Substituir sensor"
+    ],
+    "dica": "Sensor NTC",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Trane",
+    "linha": "Inverter",
+    "codigo": "P2",
+    "significado": "Proteção de alta temperatura do compressor",
+    "causas": [
+      "Condensador sujo",
+      "Ventilador externo defeituoso"
+    ],
+    "diagnostico": [
+      "Limpar condensador",
+      "Verificar ventilador"
+    ],
+    "teste_rapido": [
+      "Limpar unidade externa"
+    ],
+    "dica": "Temperatura elevada do compressor",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  },
+  {
+    "marca": "Trane",
+    "linha": "Inverter",
+    "codigo": "F1",
+    "significado": "Sensor da serpentina da evaporadora defeituoso",
+    "causas": [
+      "Sensor aberto",
+      "Sensor em curto"
+    ],
+    "diagnostico": [
+      "Medir resistência do sensor",
+      "Comparar valores"
+    ],
+    "teste_rapido": [
+      "Substituir sensor"
+    ],
+    "dica": "Sensor preso à serpentina",
+    "linha_modelo": "Inverter",
+    "linha_tipo": "Split"
+  }
+]

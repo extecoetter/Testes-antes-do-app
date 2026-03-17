@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Facilita Refrigerista</title>
+
+  <meta name="theme-color" content="#000000">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Facilita Refrigerista">
+  <link rel="apple-touch-icon" href="/APPclimatizacao/icons/icon-180.png">
+  <link rel="icon" type="image/png" href="/APPclimatizacao/icons/icon-180.png">
+
+  <script>
+  (function(){
+    const qs = new URLSearchParams(location.search);
+    const cliente =
+      qs.get('cliente') ||
+      qs.get('c') ||
+      localStorage.getItem('cliente_atual') ||
+      sessionStorage.getItem('cliente_atual');
+
+    if (cliente) {
+      const link = document.createElement('link');
+      link.rel = 'manifest';
+      link.href = '/APPclimatizacao/clientes/' + encodeURIComponent(cliente) + '/manifest-ios.json';
+      document.head.appendChild(link);
+    }
+  })();
+  </script>
+
+  <style>
+    :root{
+      --bg:#f3f6fb;--card:#ffffff;--text:#111827;--muted:#6b7280;--line:#e5e7eb;
+      --brand:#1f6feb;--brand-strong:#0b5ed7;--shadow:0 10px 30px rgba(17,24,39,.08);--radius:18px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial;background:var(--bg);color:var(--text)}
+    .wrap{max-width:920px;margin:18px auto;padding:0 14px 32px}
+    .appbar{background:linear-gradient(180deg,#2f80ff 0%,#1f6feb 100%);color:#fff;padding:18px;border-radius:18px;box-shadow:var(--shadow);margin-bottom:14px}
+    .appbar h1{margin:0;font-size:20px;font-weight:900}
+    .appbar p{margin:6px 0 0;opacity:.92;font-size:13px}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:16px}
+    .hero{display:grid;gap:14px;justify-items:center;text-align:center;padding:20px}
+    .logo{max-width:260px;max-height:120px;object-fit:contain;display:none}
+    .grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin-top:8px}
+    @media (max-width:820px){.grid{grid-template-columns:1fr}}
+    .btn{
+      border:1px solid var(--line);background:#fff;border-radius:18px;padding:20px;cursor:pointer;
+      display:grid;gap:8px;text-align:left;box-shadow:var(--shadow)
+    }
+    .btn:hover{transform:translateY(-1px)}
+    .btn .icon{font-size:34px;line-height:1}
+    .btn .title{font-weight:1000;font-size:20px}
+    .btn .desc{color:var(--muted);font-size:14px;line-height:1.35}
+    .btn.primary{background:var(--brand);color:#fff;border-color:transparent}
+    .btn.primary .desc{color:rgba(255,255,255,.92)}
+    .footer{margin-top:12px;font-size:12px;color:var(--muted);text-align:center}
+    .pill{display:inline-block;background:#eaf2ff;color:var(--brand);border-radius:999px;padding:6px 10px;font-size:12px;font-weight:900}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="appbar">
+      <h1>Facilita Refrigerista</h1>
+      <p>Escolha abaixo o que deseja abrir.</p>
+    </div>
+
+    <div class="card hero">
+      <img id="logo" class="logo" alt="Logo do técnico">
+      <div class="pill" id="destinoPill">Entrada iPhone / iOS</div>
+      <div>
+        <div id="nomeTecnico" style="font-size:22px;font-weight:1000">Carregando técnico...</div>
+      </div>
+    </div>
+
+    <div class="grid" style="margin-top:14px">
+      <button class="btn primary" id="btnOrcamento" type="button">
+        <div class="icon">📄</div>
+        <div class="title">Orçamento em PDF</div>
+        <div class="desc">Abre o motor já escolhido pelo link do cliente.</div>
+      </button>
+
+      <button class="btn" id="btnErros" type="button">
+        <div class="icon">🛠️</div>
+        <div class="title">Códigos de erro</div>
+        <div class="desc">Pesquisar falhas por marca e por código de erro.</div>
+      </button>
+
+      <button class="btn" id="btnCarga" type="button">
+        <div class="icon">🌡️</div>
+        <div class="title">Carga térmica</div>
+        <div class="desc">Calcular a capacidade ideal em BTU para o ambiente.</div>
+      </button>
+    </div>
+
+    <div class="footer">Menu único para todos os clientes. O motor do orçamento continua separado.</div>
+  </div>
+
+<script>
+(function(){
+  const qs = new URLSearchParams(location.search);
+  let cliente = qs.get('cliente') || qs.get('c') || localStorage.getItem('cliente_atual') || sessionStorage.getItem('cliente_atual');
+
+  if (cliente) {
+    localStorage.setItem('cliente_atual', cliente);
+    sessionStorage.setItem('cliente_atual', cliente);
+  }
+
+  if (!cliente) {
+    document.body.innerHTML =
+      "<h2 style='font-family:sans-serif;text-align:center;margin-top:40px'>Cliente não identificado</h2>";
+    throw new Error("Cliente não informado");
+  }
+
+  const nomeEl = document.getElementById('nomeTecnico');
+  const logoEl = document.getElementById('logo');
+
+  function carregarConfigCliente(){
+    return new Promise(function(resolve){
+      const s = document.createElement('script');
+      s.src = '../clientes/' + encodeURIComponent(cliente) + '/config.js?v=' + Date.now();
+      s.onload = function(){ resolve(window.CLIENT_CONFIG || null); };
+      s.onerror = function(){ resolve(null); };
+      document.head.appendChild(s);
+    });
+  }
+
+  function preencherCliente(cfg){
+    const inst = (cfg && cfg.installer) || {};
+    nomeEl.textContent = inst.nome || cliente;
+    if(cfg && cfg.logo){
+      logoEl.src = cfg.logo;
+      logoEl.style.display = 'block';
+      logoEl.onerror = function(){ this.style.display = 'none'; };
+    }
+  }
+
+  document.getElementById('btnOrcamento').addEventListener('click', function(){
+    location.href = '../ios/index.html?cliente=' + encodeURIComponent(cliente);
+  });
+
+  document.getElementById('btnErros').addEventListener('click', function(){
+    location.href = '../erros/index.html?cliente=' + encodeURIComponent(cliente) + '&destino=ios';
+  });
+
+  document.getElementById('btnCarga').addEventListener('click', function(){
+    location.href = '../carga/index.html?cliente=' + encodeURIComponent(cliente) + '&destino=ios';
+  });
+
+  carregarConfigCliente().then(preencherCliente);
+})();
+</script>
+
+<script src="/APPclimatizacao/pwa-register.js"></script>
+</body>
+</html>

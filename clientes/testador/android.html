@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Facilita Refrigerista</title>
+
+<link rel="manifest" href="/APPclimatizacao/clientes/testador/manifest.json">
+
+<meta name="theme-color" content="#000000">
+
+<link rel="icon" href="/APPclimatizacao/icons/icon-192.png">
+
+<style>
+
+body{
+margin:0;
+font-family:system-ui,Arial;
+background:#f3f6fb;
+display:flex;
+align-items:center;
+justify-content:center;
+height:100vh;
+}
+
+.card{
+background:white;
+padding:40px;
+border-radius:18px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+text-align:center;
+max-width:420px;
+}
+
+h1{
+margin:0;
+font-size:26px;
+}
+
+p{
+color:#666;
+margin:10px 0 25px;
+}
+
+button{
+border:none;
+background:#1f6feb;
+color:white;
+padding:16px 22px;
+font-size:16px;
+border-radius:12px;
+cursor:pointer;
+margin-top:10px;
+width:100%;
+}
+
+.install{
+background:#16a34a;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+<h1>Facilita Refrigerista</h1>
+
+<p>App do técnico<br><b>Instalador Refrigerista</b></p>
+
+<button id="btnAbrir">
+Abrir aplicativo
+</button>
+
+<button class="install" id="btnInstalar" style="display:none">
+Instalar aplicativo
+</button>
+
+</div>
+
+<script>
+
+localStorage.setItem("cliente_atual","testador");
+sessionStorage.setItem("cliente_atual","testador");
+
+document.getElementById("btnAbrir").onclick=function(){
+
+location.href="/APPclimatizacao/menu/index-android.html?cliente=testador"
+
+}
+
+let deferredPrompt;
+
+window.addEventListener("beforeinstallprompt",(e)=>{
+
+e.preventDefault();
+
+deferredPrompt=e;
+
+document.getElementById("btnInstalar").style.display="block";
+
+});
+
+document.getElementById("btnInstalar").onclick=async function(){
+
+if(!deferredPrompt) return;
+
+deferredPrompt.prompt();
+
+await deferredPrompt.userChoice;
+
+deferredPrompt=null;
+
+this.style.display="none";
+
+}
+
+</script>
+
+</body>
+</html>
