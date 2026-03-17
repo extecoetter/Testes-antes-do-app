@@ -1,7 +1,7 @@
 {
-  "name": "Facilita Refrigerista",
-  "short_name": "Facilita Refrigeristas",
-  "start_url": "/APPclimatizacao/menu/index-ios.html",
+  "name": "Testes Facilita Refrigerista",
+  "short_name": "Testes Facilita Refrigeristas",
+  "start_url": "/Testes-antes-do-app/menu/index-ios.html",
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#000000",
