@@ -23,7 +23,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="apple-mobile-web-app-title" content="Orçamento Climatização">
-  <link rel="apple-touch-icon" href="/APPclimatizacao/icons/icon-180.png">
+  <link rel="apple-touch-icon" href="/Testes-antes-do-app/icons/icon-180.png">
 
 
       
@@ -827,7 +827,7 @@
 
       var logoSrc = (window.INSTALLER && window.INSTALLER.logo)
         ? window.INSTALLER.logo
-        : "/APPclimatizacao/logo.png";
+        : "/Testes-antes-do-app/logo.png";
 
       img.src = logoSrc + (logoSrc.indexOf("?") >= 0 ? "&" : "?") + "v=" + encodeURIComponent(window.APP_VERSION || "");
     });
@@ -1116,7 +1116,7 @@
   <section class="pdf" id="pdf">
 <div class="top">
   <div class="logoRow">
-    <img id="pdfLogo" src="/APPclimatizacao/logo.png" alt="logo" onerror="this.style.display='none'"/>
+    <img id="pdfLogo" src="/Testes-antes-do-app/logo.png" alt="logo" onerror="this.style.display='none'"/>
   </div>
 
   <div class="headRow">
@@ -1204,7 +1204,7 @@
     nome: "Robson Andre Extecoetter",
     whats: "(14) 99707-3447",
     pix: "14 99707 3447 / Robson A Extecoetter",
-    logo: "/APPclimatizacao/logo.png"
+    logo: "/Testes-antes-do-app/logo.png"
   };
 
   function carregarConfigCliente() {
@@ -1218,7 +1218,7 @@
 
     return new Promise((resolve, reject) => {
       const script = document.createElement("script");
-      script.src = "/APPclimatizacao/clientes/" + cliente + "/config.js";
+      script.src = "/Testes-antes-do-app/clientes/" + cliente + "/config.js";
 
       script.onload = () => {
         if (window.CLIENT_CONFIG && window.CLIENT_CONFIG.installer) {
@@ -1235,7 +1235,7 @@
       };
 
       script.onerror = () => {
-        reject(new Error("Não foi possível carregar /APPclimatizacao/clientes/" + cliente + "/config.js"));
+        reject(new Error("Não foi possível carregar /Testes-antes-do-app/clientes/" + cliente + "/config.js"));
       };
 
       document.head.appendChild(script);
