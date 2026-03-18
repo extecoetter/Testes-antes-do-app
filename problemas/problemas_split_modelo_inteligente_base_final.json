@@ -878,10 +878,14 @@
     ],
     "diagnostico_guiado": [
       {
-        "pergunta": "Sistema está com excesso de gás?",
+        "pergunta": "Sistema está com falta de gás?",
         "se_sim": [
-          "Alta pressão",
-          "Carga de gás excessiva"
+          "A Pressão vai estar baixa",
+          "Gás R22 -Mais antigo -Trabalha com pressões menores, frequentemente entre 60 e 80 PSI na linha de baixa",
+          "Gás R32 -varia de 100 a 150 PSI (comum em torno de 130-135 PSI)",
+          "Gás R410A -Geralmente entre 100 e 150 PSI (tipicamente 110-130 PSI em dias amenos",
+          "Temperatura: A pressão aumenta com a temperatura externa e diminui com o frio.",
+          "Inverter vs. Convencional: Máquinas inverter variam a velocidade do compressor, o que altera a pressão constantemente até estabilizar."
         ]
       },
       {
@@ -896,7 +900,7 @@
         "pergunta": "A pressao está baixa?",
         "se_sim": [
           "Vazamento de Fluido Refrigerante: A falta de gás faz com que a pressão baixe drasticamente, gerando gelo na tubulação de alta (fina).",
-          "Ventilador externo fraco"
+          "Verificar e sanar o vazamento antes de fazer a recarga"
         ]
       }
     ],
