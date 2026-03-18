@@ -835,9 +835,11 @@
     ],
     "diagnostico_guiado": [
       {
-        "O congelamento da tubulação grossa (sucção) do ar-condicionado é geralmente causado por falta de troca de calor na evaporadora, o que faz o fluido refrigerante retornar em estado líquido ao compressor.": [
-          " Os principais motivos incluem sujeira extrema (filtros ou turbina), ventilador fraco, tubulação estrangulada ou excesso de gás."
-        
+        "OBS": "O fluxo de ar da evaporadora está bom?",
+        "se_sim": [
+          "O congelamento da tubulação grossa (sucção) do ar-condicionado é geralmente causado por falta de troca de calor na evaporadora, o que faz o fluido refrigerante retornar em estado líquido ao compressor.",
+          "Os principais motivos incluem sujeira extrema (filtros ou turbina), ventilador fraco, tubulação estrangulada ou excesso de gás."
+          
         ]
       },
       {
