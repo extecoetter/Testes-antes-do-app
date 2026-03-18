@@ -835,33 +835,33 @@
     ],
     "diagnostico_guiado": [
       {
-        "pergunta": "O fluxo de ar da evaporadora está bom?",
-        "se_nao": [
-          "Filtro sujo",
-          "Turbina suja",
-          "Fluxo de ar insuficiente"
+        "O congelamento da tubulação grossa (sucção) do ar-condicionado é geralmente causado por falta de troca de calor na evaporadora, o que faz o fluido refrigerante retornar em estado líquido ao compressor.": [
+          " Os principais motivos incluem sujeira extrema (filtros ou turbina), ventilador fraco, tubulação estrangulada ou excesso de gás."
+        
         ]
       },
       {
         "pergunta": "Mesmo com boa ventilação continua congelando?",
         "se_sim": [
-          "Falta de gás refrigerante",
-          "Baixa pressão no sistema",
-          "Possível vazamento"
+          "Excesso de fluido refrigerante (gás): Carga de gás acima do recomendado pode causar o congelamento na sucção.",
+          "Tubulaçao com entupimento ou sujeira.",
+          "Tubulação dobrada ou amassada: Obstrui a passagem do fluido refrigerante, causando expansão precoce e congelamento."
+          
         ]
       },
       {
-        "pergunta": "Sensor de serpentina está correto?",
-        "se_nao": [
-          "Sensor defeituoso",
-          "Leitura incorreta"
+        "pergunta": "A temperatura está baixa?",
+        "se_sim": [
+          "Usar o ar no máximo em um dia frio também pode levar ao congelamento"
+      
         ]
       }
     ],
     "verificacoes_rapidas": [
       "Limpar filtros",
       "Verificar ventilação",
-      "Medir pressão do sistema"
+      "Medir pressão do sistema",
+      "Verificar amassados, dobras, ou sujeira na tubulaçao"
     ]
   },
   {
@@ -875,32 +875,35 @@
     ],
     "diagnostico_guiado": [
       {
-        "pergunta": "Sistema está com excesso de gás?",
-        "se_sim": [
-          "Alta pressão",
-          "Carga de gás excessiva"
+        "pergunta": "sinal clássico de que o sistema está operando com baixa pressão",
+        "Verifique:": [
+          "Pressão no sistema",
+          "Tubulaçao amassada - restriçao na linha",
+          "Falta de Gás Refrigerante"
+         
         ]
       },
       {
-        "pergunta": "Há obstrução no sistema?",
+        "pergunta": "A Pressão esta boa?",
         "se_sim": [
-          "Capilar entupido",
-          "Filtro secador obstruído",
-          "Restrição na linha"
+          "Falha no Ventilador (Turbina): O ventilador da unidade interna (evaporadora) não circula o ar, causando congelamento",
+          "Verifique se a serpentina da evaporadora está suja",
+          "Filtros de Ar Sujos: A falta de limpeza restringe o fluxo de ar na evaporadora, fazendo com que o gás não absorva calor suficiente e congele."
         ]
       },
       {
-        "pergunta": "Condensadora está dissipando calor corretamente?",
-        "se_nao": [
-          "Serpentina externa suja",
+        "pergunta": "A pressao está baixa?",
+        "se_sim": [
+          "Vazamento de Fluido Refrigerante: A falta de gás faz com que a pressão baixe drasticamente, gerando gelo na tubulação de alta (fina).",
           "Ventilador externo fraco"
         ]
       }
     ],
     "verificacoes_rapidas": [
-      "Verificar pressão alta",
-      "Limpar condensadora",
-      "Inspecionar restrições"
+      "OBS: Baixa Temperatura Externa: Usar o aparelho com temperaturas muito baixas do lado de fora /abaixo de 15 a 18 graus",
+      "Verificar a pressão do fluido refrigerante",
+      "Verificar a tubulaçao se tem amassado",
+      "Verificar a limpeza dos filtros / serpentina da evaporadora"
     ]
   },
   {
