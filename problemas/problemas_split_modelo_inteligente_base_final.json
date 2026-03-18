@@ -837,9 +837,10 @@
     ],
     "diagnostico_guiado": [
       {
-        "OBS": "A tubulaçao grossa congela porque o fluido refrigerante volta liquido ao compressor:",
-        "Principais Motivos": [
+        "pergunta": "Foi feito recarga de gás sem balança?",
+        "se sim": [
           "Excesso de gás",
+          "Verifique tambem:",
           "Tubulaçao estrangulada, ou entupida por sujeira",
           "Evaporadora com filtros /serpentina / turbina sujos",
           "Ventilador Fraco"
