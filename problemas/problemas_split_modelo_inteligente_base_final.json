@@ -835,11 +835,12 @@
     ],
     "diagnostico_guiado": [
       {
-        "pergunta": "O fluxo de ar da evaporadora está bom?",
-        "se_nao": [
-          "Filtro sujo",
-          "Turbina suja",
-          "Fluxo de ar insuficiente"
+        "OBS": "A tubulaçao grossa congela porque o fluido refrigerante volta liquido ao compressor:",
+        "Principais Motivos": [
+          "Excesso de gás",
+          "Tubulaçao estrangulada, ou entupida por sujeira",
+          "Evaporadora com filtros /serpentina / turbina sujos",
+          "Ventilador Fraco"
         ]
       },
       {
