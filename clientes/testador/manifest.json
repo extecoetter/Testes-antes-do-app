@@ -1,21 +1,21 @@
 {
   "name": "Facilita Refrigerista - Instalador Refrigerista",
   "short_name": "Facilita",
-  "start_url": "/APPclimatizacao/menu/index-android.html?cliente=testador",
-  "scope": "/APPclimatizacao/",
+  "start_url": "/Testes-antes-do-app/menu/index-android.html?cliente=testador",
+  "scope": "/Testes-antes-do-app/",
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#000000",
   "orientation": "portrait",
   "icons": [
     {
-      "src": "/APPclimatizacao/icons/icon-192.png",
+      "src": "/Testes-antes-do-app/icons/icon-192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/APPclimatizacao/icons/icon-512.png",
+      "src": "/Testes-antes-do-app/icons/icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
