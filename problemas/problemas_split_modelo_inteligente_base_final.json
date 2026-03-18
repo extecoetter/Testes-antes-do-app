@@ -877,12 +877,11 @@
     ],
     "diagnostico_guiado": [
       {
-        "pergunta": "sinal clássico de que o sistema está operando com baixa pressão",
-        "Verifique:": [
-          "Pressão no sistema",
+        "OBS": "sinal clássico de que o sistema está operando com baixa pressão",
+        "Verifique": [
+          "Pressão do sistema",
           "Tubulaçao amassada - restriçao na linha",
           "Falta de Gás Refrigerante"
-         
         ]
       },
       {
