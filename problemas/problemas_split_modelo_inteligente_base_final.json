@@ -838,7 +838,7 @@
     "diagnostico_guiado": [
       {
         "pergunta": "Foi feito recarga de gás sem balança?",
-        "se sim": [
+        "se_sim": [
           "Excesso de gás",
           "Verifique tambem:",
           "Tubulaçao estrangulada, ou entupida por sujeira",
