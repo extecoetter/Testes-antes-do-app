@@ -1,0 +1,1533 @@
+[
+  {
+    "problema": "evaporadora pingando água",
+    "categoria": "drenagem",
+    "busca": [
+      "pingando água",
+      "ar pingando água",
+      "split pingando água",
+      "evaporadora pingando água",
+      "vazando água",
+      "água saindo da evaporadora",
+      "água escorrendo",
+      "água no split",
+      "água saindo pela frente",
+      "água na parede"
+    ],
+    "diagnostico_guiado": [
+      {
+        "pergunta": "A evaporadora está suja?",
+        "se_sim": [
+          "Filtro sujo",
+          "Serpentina suja",
+          "Turbina suja",
+          "Causa provável: falta de limpeza"
+        ]
+      },
+      {
+        "pergunta": "Tem gelo na serpentina?",
+        "se_sim": [
+          "Evaporadora congelando",
+          "Possível falta de gás",
+          "Fluxo de ar insuficiente",
+          "Sensor de serpentina com defeito"
+        ]
+      },
+      {
+        "pergunta": "O dreno está escoando água normalmente?",
+        "se_nao": [
+          "Dreno entupido",
+          "Mangueira dobrada",
+          "Calha da evaporadora com sujeira",
+          "Obstrução no ponto de saída"
+        ]
+      },
+      {
+        "pergunta": "A evaporadora tem caimento correto para o lado do dreno?",
+        "se_nao": [
+          "Evaporadora desnivelada",
+          "Instalação sem caimento para o dreno",
+          "Causa provável: erro de instalação"
+        ]
+      }
+    ],
+    "verificacoes_rapidas": [
+      "Limpar filtros e observar novamente",
+      "Verificar se há gelo na serpentina",
+      "Testar escoamento do dreno com água",
+      "Conferir nível da evaporadora"
+    ]
+  },
+  {
+    "problema": "split não gela",
+    "categoria": "refrigeração",
+    "busca": [
+      "não gela",
+      "ar não gela",
+      "split não gela",
+      "ar condicionado não gela",
+      "não resfria",
+      "não refrigera",
+      "não esfria",
+      "gela pouco",
+      "sem rendimento"
+    ],
+    "diagnostico_guiado": [
+      {
+        "pergunta": "A evaporadora e os filtros estão limpos?",
+        "se_nao": [
+          "Filtro sujo",
+          "Serpentina suja",
+          "Turbina suja",
+          "Causa provável: falta de limpeza"
+        ]
+      },
+      {
+        "pergunta": "A condensadora está funcionando normalmente?",
+        "se_nao": [
+          "Ventilador da condensadora parado",
+          "Capacitor defeituoso",
+          "Placa da condensadora com defeito",
+          "Compressor não está partindo"
+        ]
+      },
+      {
+        "pergunta": "O compressor está ligando?",
+        "se_nao": [
+          "Capacitor defeituoso",
+          "Compressor travado",
+          "Placa inverter com defeito",
+          "Falta de alimentação"
+        ]
+      },
+      {
+        "pergunta": "Tem sinais de baixa carga, como pouco rendimento e possível congelamento?",
+        "se_sim": [
+          "Possível falta de gás",
+          "Vazamento no sistema",
+          "Restrição parcial no circuito"
+        ]
+      }
+    ],
+    "verificacoes_rapidas": [
+      "Limpar filtros",
+      "Observar se compressor parte",
+      "Verificar ventilador da condensadora",
+      "Medir pressão do sistema se necessário"
+    ]
+  },
+  {
+    "problema": "evaporadora congelando",
+    "categoria": "refrigeração",
+    "busca": [
+      "congelando",
+      "evaporadora congelando",
+      "serpentina congelando",
+      "ar criando gelo",
+      "gelo na evaporadora",
+      "split com gelo"
+    ],
+    "diagnostico_guiado": [
+      {
+        "pergunta": "O filtro ou a serpentina estão sujos?",
+        "se_sim": [
+          "Fluxo de ar insuficiente",
+          "Falta de limpeza",
+          "Turbina suja"
+        ]
+      },
+      {
+        "pergunta": "O ventilador da evaporadora está girando com força normal?",
+        "se_nao": [
+          "Motor ventilador fraco",
+          "Capacitor defeituoso",
+          "Placa não acionando corretamente"
+        ]
+      },
+      {
+        "pergunta": "Mesmo com boa ventilação continua congelando?",
+        "se_sim": [
+          "Possível falta de gás",
+          "Sensor de serpentina defeituoso",
+          "Restrição no sistema"
+        ]
+      }
+    ],
+    "verificacoes_rapidas": [
+      "Limpar filtros",
+      "Observar força do vento na evaporadora",
+      "Descongelar e testar novamente",
+      "Verificar se há baixa carga de refrigerante"
+    ]
+  },
+  {
+    "problema": "ventilador da evaporadora não gira",
+    "categoria": "ventilação",
+    "busca": [
+      "ventilador não gira",
+      "turbina não gira",
+      "sem ventilação",
+      "ar sai fraco",
+      "evaporadora não ventila",
+      "motor da evaporadora parado"
+    ],
+    "diagnostico_guiado": [
+      {
+        "pergunta": "A turbina está travada por sujeira?",
+        "se_sim": [
+          "Turbina suja",
+          "Falta de limpeza",
+          "Travamento mecânico"
+        ]
+      },
+      {
+        "pergunta": "O motor recebe tensão quando o aparelho manda ventilar?",
+        "se_nao": [
+          "Placa não acionando motor",
+          "Chicote rompido",
+          "Conector solto"
+        ]
+      },
+      {
+        "pergunta": "O motor recebe tensão mas não gira?",
+        "se_sim": [
+          "Motor ventilador defeituoso",
+          "Capacitor defeituoso nos modelos que usam capacitor",
+          "Motor travado"
+        ]
+      }
+    ],
+    "verificacoes_rapidas": [
+      "Girar turbina manualmente com aparelho desligado",
+      "Inspecionar sujeira na turbina",
+      "Medir tensão no motor",
+      "Testar capacitor se houver"
+    ]
+  },
+  {
+    "problema": "split desarmando disjuntor",
+    "categoria": "elétrica",
+    "busca": [
+      "desarma disjuntor",
+      "derruba disjuntor",
+      "disjuntor cai",
+      "arma e desarma",
+      "curto no ar condicionado"
+    ],
+    "diagnostico_guiado": [
+      {
+        "pergunta": "O disjuntor desarma imediatamente ao ligar?",
+        "se_sim": [
+          "Curto na alimentação",
+          "Curto na placa",
+          "Compressor em curto",
+          "Ventilador em curto"
+        ]
+      },
+      {
+        "pergunta": "O disjuntor desarma só quando compressor tenta partir?",
+        "se_sim": [
+          "Compressor travado",
+          "Capacitor defeituoso",
+          "Sobrecorrente de partida",
+          "Bitola ou disjuntor inadequado"
+        ]
+      },
+      {
+        "pergunta": "A rede elétrica e o disjuntor estão dimensionados corretamente?",
+        "se_nao": [
+          "Disjuntor subdimensionado",
+          "Fiação inadequada",
+          "Instalação elétrica incorreta"
+        ]
+      }
+    ],
+    "verificacoes_rapidas": [
+      "Separar se desarma na hora ou depois",
+      "Verificar bitola da fiação",
+      "Inspecionar compressor e ventiladores",
+      "Medir corrente de partida"
+    ]
+  },
+  {
+    "problema": "compressor não parte",
+    "categoria": "compressor",
+    "busca": [
+      "compressor não parte",
+      "compressor não liga",
+      "compressor não inicia",
+      "condensadora liga mas compressor não",
+      "compressor tenta partir"
+    ],
+    "diagnostico_guiado": [
+      {
+        "pergunta": "É modelo convencional com capacitor?",
+        "se_sim": [
+          "Testar capacitor do compressor",
+          "Verificar relé de partida se houver",
+          "Verificar protetor térmico"
+        ]
+      },
+      {
+        "pergunta": "Chega tensão no compressor quando ele deveria partir?",
+        "se_nao": [
+          "Placa não acionando",
+          "Contatores ou relés com defeito",
+          "Falta de alimentação"
+        ]
+      },
+      {
+        "pergunta": "Chega tensão mas ele não parte?",
+        "se_sim": [
+          "Compressor travado",
+          "Enrolamento com defeito",
+          "Protetor térmico aberto",
+          "Problema no módulo inverter nos inverter"
+        ]
+      }
+    ],
+    "verificacoes_rapidas": [
+      "Medir tensão no compressor",
+      "Testar capacitor se houver",
+      "Medir resistência dos enrolamentos",
+      "Verificar aquecimento excessivo"
+    ]
+  },
+  {
+    "problema": "condensadora não liga",
+    "categoria": "elétrica",
+    "busca": [
+      "condensadora não liga",
+      "unidade externa não liga",
+      "parte externa não funciona",
+      "condensadora parada"
+    ],
+    "diagnostico_guiado": [
+      {
+        "pergunta": "A unidade externa está recebendo alimentação?",
+        "se_nao": [
+          "Falta de energia na condensadora",
+          "Interligação errada",
+          "Disjuntor desligado",
+          "Fusível aberto"
+        ]
+      },
+      {
+        "pergunta": "A evaporadora está mandando comando para a condensadora?",
+        "se_nao": [
+          "Falha de comunicação",
+          "Cabo de interligação rompido",
+          "Placa da evaporadora com defeito"
+        ]
+      },
+      {
+        "pergunta": "Recebe alimentação e comando, mas não funciona?",
+        "se_sim": [
+          "Placa da condensadora defeituosa",
+          "Compressor travado",
+          "Ventilador externo com defeito"
+        ]
+      }
+    ],
+    "verificacoes_rapidas": [
+      "Confirmar alimentação na unidade externa",
+      "Verificar cabos de interligação",
+      "Observar se há LED ou sinal de vida na placa",
+      "Inspecionar compressor e ventilador"
+    ]
+  },
+  {
+    "problema": "split fazendo barulho",
+    "categoria": "ruído",
+    "busca": [
+      "barulho",
+      "muito barulho",
+      "fazendo barulho",
+      "vibrando",
+      "ruído no split",
+      "barulho na evaporadora",
+      "barulho na condensadora"
+    ],
+    "diagnostico_guiado": [
+      {
+        "pergunta": "O barulho vem da evaporadora?",
+        "se_sim": [
+          "Turbina suja ou desbalanceada",
+          "Motor ventilador com rolamento ruim",
+          "Carcaça mal encaixada",
+          "Gelo tocando na turbina"
+        ]
+      },
+      {
+        "pergunta": "O barulho vem da condensadora?",
+        "se_sim": [
+          "Hélice danificada",
+          "Ventilador externo com rolamento ruim",
+          "Compressor vibrando",
+          "Parafusos ou estrutura soltos"
+        ]
+      },
+      {
+        "pergunta": "A vibração passa para parede ou suporte?",
+        "se_sim": [
+          "Suporte mal fixado",
+          "Borracha de apoio ruim",
+          "Instalação transmitindo vibração"
+        ]
+      }
+    ],
+    "verificacoes_rapidas": [
+      "Identificar se o ruído é interno ou externo",
+      "Apertar fixações visíveis",
+      "Inspecionar turbina e hélice",
+      "Verificar vibração no suporte"
+    ]
+  },
+  {
+    "problema": "split não liga",
+    "categoria": "elétrica",
+    "busca": [
+      "não liga",
+      "ar não liga",
+      "split não liga",
+      "ar condicionado não liga",
+      "não acende",
+      "sem energia"
+    ],
+    "diagnostico_guiado": [
+      {
+        "pergunta": "Há energia chegando no equipamento?",
+        "se_nao": [
+          "Disjuntor desligado",
+          "Falta de energia",
+          "Fiação interrompida",
+          "Tomada ou borne sem tensão"
+        ]
+      },
+      {
+        "pergunta": "O painel acende ou dá algum sinal de vida?",
+        "se_nao": [
+          "Placa sem alimentação",
+          "Fusível aberto",
+          "Fonte da placa defeituosa"
+        ]
+      },
+      {
+        "pergunta": "O controle remoto está funcionando corretamente?",
+        "se_nao": [
+          "Pilhas fracas",
+          "Controle remoto com defeito",
+          "Receptor da evaporadora com problema"
+        ]
+      }
+    ],
+    "verificacoes_rapidas": [
+      "Medir tensão de entrada",
+      "Verificar disjuntor",
+      "Trocar pilhas do controle",
+      "Inspecionar fusível e fonte da placa"
+    ]
+  },
+  {
+    "problema": "split cheirando ruim",
+    "categoria": "limpeza",
+    "busca": [
+      "cheiro ruim",
+      "mau cheiro",
+      "cheiro forte",
+      "fedor no split",
+      "ar com cheiro ruim"
+    ],
+    "diagnostico_guiado": [
+      {
+        "pergunta": "A evaporadora está com sujeira visível?",
+        "se_sim": [
+          "Fungos e bactérias",
+          "Turbina suja",
+          "Serpentina contaminada",
+          "Bandeja suja"
+        ]
+      },
+      {
+        "pergunta": "O dreno e a bandeja estão limpos?",
+        "se_nao": [
+          "Água parada",
+          "Lodo na bandeja",
+          "Cheiro vindo do dreno"
+        ]
+      }
+    ],
+    "verificacoes_rapidas": [
+      "Abrir evaporadora e inspecionar sujeira",
+      "Verificar bandeja de condensado",
+      "Conferir dreno",
+      "Realizar higienização completa"
+    ]
+  },
+  {
+    "problema": "split gela pouco",
+    "categoria": "refrigeração",
+    "busca": [
+      "gela pouco",
+      "pouco frio",
+      "fraco",
+      "não gela direito",
+      "rendimento baixo"
+    ],
+    "diagnostico_guiado": [
+      {
+        "pergunta": "Filtros e serpentina estão limpos?",
+        "se_nao": [
+          "filtro sujo",
+          "serpentina suja",
+          "falta de limpeza"
+        ]
+      },
+      {
+        "pergunta": "Ambiente é compatível com capacidade do aparelho?",
+        "se_nao": [
+          "carga térmica alta",
+          "equipamento subdimensionado"
+        ]
+      },
+      {
+        "pergunta": "Há sinais de falta de gás?",
+        "se_sim": [
+          "baixo rendimento",
+          "possível vazamento",
+          "carga insuficiente"
+        ]
+      }
+    ],
+    "verificacoes_rapidas": [
+      "limpar filtros",
+      "avaliar ambiente",
+      "medir pressão"
+    ]
+  },
+  {
+    "problema": "split liga e desliga sozinho",
+    "categoria": "elétrica",
+    "busca": [
+      "liga e desliga",
+      "desliga sozinho",
+      "fica ligando e desligando",
+      "ciclo curto"
+    ],
+    "diagnostico_guiado": [
+      {
+        "pergunta": "Sensor de temperatura está correto?",
+        "se_nao": [
+          "sensor defeituoso",
+          "leitura errada"
+        ]
+      },
+      {
+        "pergunta": "Rede elétrica está estável?",
+        "se_nao": [
+          "queda de tensão",
+          "instabilidade elétrica"
+        ]
+      },
+      {
+        "pergunta": "Equipamento está entrando em proteção?",
+        "se_sim": [
+          "superaquecimento",
+          "proteção de pressão"
+        ]
+      }
+    ],
+    "verificacoes_rapidas": [
+      "medir tensão",
+      "observar tempo de ciclo",
+      "verificar sensores"
+    ]
+  },
+  {
+    "problema": "condensadora muito quente",
+    "categoria": "compressor",
+    "busca": [
+      "condensadora quente",
+      "externa quente",
+      "superaquecendo"
+    ],
+    "diagnostico_guiado": [
+      {
+        "pergunta": "Ventilador externo está funcionando?",
+        "se_nao": [
+          "motor ventilador defeituoso",
+          "capacitor ruim"
+        ]
+      },
+      {
+        "pergunta": "Serpentina externa está suja?",
+        "se_sim": [
+          "falta de limpeza",
+          "troca térmica ruim"
+        ]
+      },
+      {
+        "pergunta": "Sistema está com alta pressão?",
+        "se_sim": [
+          "excesso de gás",
+          "restrição no sistema"
+        ]
+      }
+    ],
+    "verificacoes_rapidas": [
+      "limpar condensadora",
+      "verificar ventilador",
+      "medir pressão"
+    ]
+  },
+  {
+    "problema": "ar sai fraco",
+    "categoria": "ventilação",
+    "busca": [
+      "vento fraco",
+      "ar fraco",
+      "pouco vento",
+      "sem força"
+    ],
+    "diagnostico_guiado": [
+      {
+        "pergunta": "Filtros estão sujos?",
+        "se_sim": [
+          "fluxo bloqueado",
+          "falta de limpeza"
+        ]
+      },
+      {
+        "pergunta": "Turbina está suja?",
+        "se_sim": [
+          "acúmulo de sujeira",
+          "perda de rendimento"
+        ]
+      },
+      {
+        "pergunta": "Motor ventilador está fraco?",
+        "se_sim": [
+          "capacitor defeituoso",
+          "motor desgastado"
+        ]
+      }
+    ],
+    "verificacoes_rapidas": [
+      "limpar filtros",
+      "inspecionar turbina",
+      "avaliar ventilador"
+    ]
+  },
+  {
+    "problema": "split demora para gelar",
+    "categoria": "refrigeração",
+    "busca": [
+      "demora gelar",
+      "lento",
+      "demora resfriar"
+    ],
+    "diagnostico_guiado": [
+      {
+        "pergunta": "Ambiente está muito quente ou grande?",
+        "se_sim": [
+          "carga térmica alta"
+        ]
+      },
+      {
+        "pergunta": "Sistema está com baixa carga?",
+        "se_sim": [
+          "falta de gás"
+        ]
+      },
+      {
+        "pergunta": "Filtros estão sujos?",
+        "se_sim": [
+          "restrição de ar"
+        ]
+      }
+    ],
+    "verificacoes_rapidas": [
+      "limpar filtros",
+      "avaliar ambiente",
+      "medir gás"
+    ]
+  },
+  {
+    "problema": "ar condicionado não desliga",
+    "categoria": "controle",
+    "busca": [
+      "não desliga",
+      "fica ligado direto",
+      "não para"
+    ],
+    "diagnostico_guiado": [
+      {
+        "pergunta": "Controle remoto está funcionando?",
+        "se_nao": [
+          "controle defeituoso"
+        ]
+      },
+      {
+        "pergunta": "Sensor está lendo corretamente?",
+        "se_nao": [
+          "sensor ambiente com defeito"
+        ]
+      },
+      {
+        "pergunta": "Placa está travada?",
+        "se_sim": [
+          "falha eletrônica"
+        ]
+      }
+    ],
+    "verificacoes_rapidas": [
+      "testar controle",
+      "verificar sensor",
+      "resetar aparelho"
+    ]
+  },
+  {
+    "problema": "evaporadora não ventila direito",
+    "categoria": "ventilação",
+    "busca": [
+      "ventila pouco",
+      "sem vento",
+      "fraco ventilador"
+    ],
+    "diagnostico_guiado": [
+      {
+        "pergunta": "Turbina está suja?",
+        "se_sim": [
+          "falta de limpeza"
+        ]
+      },
+      {
+        "pergunta": "Motor ventilador está normal?",
+        "se_nao": [
+          "motor fraco",
+          "capacitor ruim"
+        ]
+      },
+      {
+        "pergunta": "Fluxo de ar está bloqueado?",
+        "se_sim": [
+          "filtro sujo"
+        ]
+      }
+    ],
+    "verificacoes_rapidas": [
+      "limpar turbina",
+      "testar motor",
+      "limpar filtros"
+    ]
+  },
+  {
+    "problema": "split com gelo e não gela",
+    "categoria": "refrigeração",
+    "busca": [
+      "gelo e não gela",
+      "congela e para",
+      "gelo na serpentina"
+    ],
+    "diagnostico_guiado": [
+      {
+        "pergunta": "Fluxo de ar está baixo?",
+        "se_sim": [
+          "filtro sujo",
+          "turbina suja"
+        ]
+      },
+      {
+        "pergunta": "Sistema está com baixa carga?",
+        "se_sim": [
+          "falta de gás"
+        ]
+      },
+      {
+        "pergunta": "Sensor está correto?",
+        "se_nao": [
+          "sensor defeituoso"
+        ]
+      }
+    ],
+    "verificacoes_rapidas": [
+      "limpar filtros",
+      "descongelar",
+      "medir gás"
+    ]
+  },
+  {
+    "problema": "split vibrando muito",
+    "categoria": "ruído",
+    "busca": [
+      "vibrando",
+      "trepidando",
+      "vibração forte"
+    ],
+    "diagnostico_guiado": [
+      {
+        "pergunta": "Suporte está firme?",
+        "se_nao": [
+          "suporte solto"
+        ]
+      },
+      {
+        "pergunta": "Equipamento está nivelado?",
+        "se_nao": [
+          "instalação incorreta"
+        ]
+      },
+      {
+        "pergunta": "Compressor está vibrando?",
+        "se_sim": [
+          "desgaste interno"
+        ]
+      }
+    ],
+    "verificacoes_rapidas": [
+      "apertar suporte",
+      "nivelar unidade",
+      "verificar compressor"
+    ]
+  },
+  {
+    "problema": "ar condicionado não responde ao controle",
+    "categoria": "controle",
+    "busca": [
+      "controle não funciona",
+      "não responde",
+      "não obedece controle"
+    ],
+    "diagnostico_guiado": [
+      {
+        "pergunta": "Controle tem bateria?",
+        "se_nao": [
+          "pilha fraca"
+        ]
+      },
+      {
+        "pergunta": "Receptor da evaporadora funciona?",
+        "se_nao": [
+          "sensor IR defeituoso"
+        ]
+      },
+      {
+        "pergunta": "Placa está recebendo sinal?",
+        "se_nao": [
+          "falha eletrônica"
+        ]
+      }
+    ],
+    "verificacoes_rapidas": [
+      "trocar pilhas",
+      "testar controle",
+      "verificar receptor"
+    ]
+  },
+  {
+    "problema": "tubulação grossa congelando",
+    "categoria": "refrigeração",
+    "busca": [
+      "tubo grosso congelando",
+      "linha grossa congelando",
+      "sucção congelando",
+      "cano grosso com gelo"
+    ],
+    "diagnostico_guiado": [
+      {
+        "pergunta": "O fluxo de ar da evaporadora está bom?",
+        "se_nao": [
+          "Filtro sujo",
+          "Turbina suja",
+          "Fluxo de ar insuficiente"
+        ]
+      },
+      {
+        "pergunta": "Mesmo com boa ventilação continua congelando?",
+        "se_sim": [
+          "Falta de gás refrigerante",
+          "Baixa pressão no sistema",
+          "Possível vazamento"
+        ]
+      },
+      {
+        "pergunta": "Sensor de serpentina está correto?",
+        "se_nao": [
+          "Sensor defeituoso",
+          "Leitura incorreta"
+        ]
+      }
+    ],
+    "verificacoes_rapidas": [
+      "Limpar filtros",
+      "Verificar ventilação",
+      "Medir pressão do sistema"
+    ]
+  },
+  {
+    "problema": "tubulação fina congelando",
+    "categoria": "refrigeração",
+    "busca": [
+      "tubo fino congelando",
+      "linha fina congelando",
+      "líquido congelando",
+      "cano fino com gelo"
+    ],
+    "diagnostico_guiado": [
+      {
+        "pergunta": "Sistema está com excesso de gás?",
+        "se_sim": [
+          "Alta pressão",
+          "Carga de gás excessiva"
+        ]
+      },
+      {
+        "pergunta": "Há obstrução no sistema?",
+        "se_sim": [
+          "Capilar entupido",
+          "Filtro secador obstruído",
+          "Restrição na linha"
+        ]
+      },
+      {
+        "pergunta": "Condensadora está dissipando calor corretamente?",
+        "se_nao": [
+          "Serpentina externa suja",
+          "Ventilador externo fraco"
+        ]
+      }
+    ],
+    "verificacoes_rapidas": [
+      "Verificar pressão alta",
+      "Limpar condensadora",
+      "Inspecionar restrições"
+    ]
+  },
+  {
+    "problema": "gela e para",
+    "categoria": "geral",
+    "busca": [
+      "gela e para"
+    ],
+    "diagnostico_guiado": [
+      {
+        "pergunta": "Equipamento está limpo?",
+        "se_nao": [
+          "filtro sujo",
+          "serpentina suja"
+        ]
+      },
+      {
+        "pergunta": "Sistema está com carga correta?",
+        "se_nao": [
+          "falta de gás",
+          "excesso de gás"
+        ]
+      },
+      {
+        "pergunta": "Há falha elétrica?",
+        "se_sim": [
+          "placa defeituosa",
+          "sensor com erro"
+        ]
+      }
+    ],
+    "verificacoes_rapidas": [
+      "limpar filtros",
+      "verificar gás",
+      "avaliar funcionamento geral"
+    ]
+  },
+  {
+    "problema": "só ventila não gela",
+    "categoria": "geral",
+    "busca": [
+      "só ventila não gela"
+    ],
+    "diagnostico_guiado": [
+      {
+        "pergunta": "Equipamento está limpo?",
+        "se_nao": [
+          "filtro sujo",
+          "serpentina suja"
+        ]
+      },
+      {
+        "pergunta": "Sistema está com carga correta?",
+        "se_nao": [
+          "falta de gás",
+          "excesso de gás"
+        ]
+      },
+      {
+        "pergunta": "Há falha elétrica?",
+        "se_sim": [
+          "placa defeituosa",
+          "sensor com erro"
+        ]
+      }
+    ],
+    "verificacoes_rapidas": [
+      "limpar filtros",
+      "verificar gás",
+      "avaliar funcionamento geral"
+    ]
+  },
+  {
+    "problema": "compressor liga e desarma",
+    "categoria": "geral",
+    "busca": [
+      "compressor liga e desarma"
+    ],
+    "diagnostico_guiado": [
+      {
+        "pergunta": "Equipamento está limpo?",
+        "se_nao": [
+          "filtro sujo",
+          "serpentina suja"
+        ]
+      },
+      {
+        "pergunta": "Sistema está com carga correta?",
+        "se_nao": [
+          "falta de gás",
+          "excesso de gás"
+        ]
+      },
+      {
+        "pergunta": "Há falha elétrica?",
+        "se_sim": [
+          "placa defeituosa",
+          "sensor com erro"
+        ]
+      }
+    ],
+    "verificacoes_rapidas": [
+      "limpar filtros",
+      "verificar gás",
+      "avaliar funcionamento geral"
+    ]
+  },
+  {
+    "problema": "interna liga externa não",
+    "categoria": "geral",
+    "busca": [
+      "interna liga externa não"
+    ],
+    "diagnostico_guiado": [
+      {
+        "pergunta": "Equipamento está limpo?",
+        "se_nao": [
+          "filtro sujo",
+          "serpentina suja"
+        ]
+      },
+      {
+        "pergunta": "Sistema está com carga correta?",
+        "se_nao": [
+          "falta de gás",
+          "excesso de gás"
+        ]
+      },
+      {
+        "pergunta": "Há falha elétrica?",
+        "se_sim": [
+          "placa defeituosa",
+          "sensor com erro"
+        ]
+      }
+    ],
+    "verificacoes_rapidas": [
+      "limpar filtros",
+      "verificar gás",
+      "avaliar funcionamento geral"
+    ]
+  },
+  {
+    "problema": "externa liga interna não",
+    "categoria": "geral",
+    "busca": [
+      "externa liga interna não"
+    ],
+    "diagnostico_guiado": [
+      {
+        "pergunta": "Equipamento está limpo?",
+        "se_nao": [
+          "filtro sujo",
+          "serpentina suja"
+        ]
+      },
+      {
+        "pergunta": "Sistema está com carga correta?",
+        "se_nao": [
+          "falta de gás",
+          "excesso de gás"
+        ]
+      },
+      {
+        "pergunta": "Há falha elétrica?",
+        "se_sim": [
+          "placa defeituosa",
+          "sensor com erro"
+        ]
+      }
+    ],
+    "verificacoes_rapidas": [
+      "limpar filtros",
+      "verificar gás",
+      "avaliar funcionamento geral"
+    ]
+  },
+  {
+    "problema": "consumo de energia alto",
+    "categoria": "geral",
+    "busca": [
+      "consumo de energia alto"
+    ],
+    "diagnostico_guiado": [
+      {
+        "pergunta": "Equipamento está limpo?",
+        "se_nao": [
+          "filtro sujo",
+          "serpentina suja"
+        ]
+      },
+      {
+        "pergunta": "Sistema está com carga correta?",
+        "se_nao": [
+          "falta de gás",
+          "excesso de gás"
+        ]
+      },
+      {
+        "pergunta": "Há falha elétrica?",
+        "se_sim": [
+          "placa defeituosa",
+          "sensor com erro"
+        ]
+      }
+    ],
+    "verificacoes_rapidas": [
+      "limpar filtros",
+      "verificar gás",
+      "avaliar funcionamento geral"
+    ]
+  },
+  {
+    "problema": "não mantém temperatura",
+    "categoria": "geral",
+    "busca": [
+      "não mantém temperatura"
+    ],
+    "diagnostico_guiado": [
+      {
+        "pergunta": "Equipamento está limpo?",
+        "se_nao": [
+          "filtro sujo",
+          "serpentina suja"
+        ]
+      },
+      {
+        "pergunta": "Sistema está com carga correta?",
+        "se_nao": [
+          "falta de gás",
+          "excesso de gás"
+        ]
+      },
+      {
+        "pergunta": "Há falha elétrica?",
+        "se_sim": [
+          "placa defeituosa",
+          "sensor com erro"
+        ]
+      }
+    ],
+    "verificacoes_rapidas": [
+      "limpar filtros",
+      "verificar gás",
+      "avaliar funcionamento geral"
+    ]
+  },
+  {
+    "problema": "desliga após alguns minutos",
+    "categoria": "geral",
+    "busca": [
+      "desliga após alguns minutos"
+    ],
+    "diagnostico_guiado": [
+      {
+        "pergunta": "Equipamento está limpo?",
+        "se_nao": [
+          "filtro sujo",
+          "serpentina suja"
+        ]
+      },
+      {
+        "pergunta": "Sistema está com carga correta?",
+        "se_nao": [
+          "falta de gás",
+          "excesso de gás"
+        ]
+      },
+      {
+        "pergunta": "Há falha elétrica?",
+        "se_sim": [
+          "placa defeituosa",
+          "sensor com erro"
+        ]
+      }
+    ],
+    "verificacoes_rapidas": [
+      "limpar filtros",
+      "verificar gás",
+      "avaliar funcionamento geral"
+    ]
+  },
+  {
+    "problema": "pressão baixa no sistema",
+    "categoria": "refrigeração",
+    "busca": [
+      "pressão baixa",
+      "baixa pressão",
+      "sucção baixa",
+      "sem gás",
+      "pouco gás"
+    ],
+    "diagnostico_guiado": [
+      {
+        "pergunta": "Há congelamento na evaporadora ou tubo grosso?",
+        "se_sim": [
+          "falta de gás",
+          "vazamento no sistema"
+        ]
+      },
+      {
+        "pergunta": "Evaporadora está limpa e ventilando bem?",
+        "se_nao": [
+          "filtro sujo",
+          "turbina suja"
+        ]
+      },
+      {
+        "pergunta": "Sistema foi recentemente mexido?",
+        "se_sim": [
+          "vazamento em flange",
+          "carga incorreta"
+        ]
+      }
+    ],
+    "verificacoes_rapidas": [
+      "medir pressão",
+      "inspecionar vazamentos",
+      "verificar limpeza"
+    ]
+  },
+  {
+    "problema": "pressão alta no sistema",
+    "categoria": "refrigeração",
+    "busca": [
+      "pressão alta",
+      "alta pressão",
+      "condensadora quente",
+      "descarga alta"
+    ],
+    "diagnostico_guiado": [
+      {
+        "pergunta": "Condensadora está limpa?",
+        "se_nao": [
+          "serpentina suja",
+          "troca térmica ruim"
+        ]
+      },
+      {
+        "pergunta": "Ventilador externo está funcionando?",
+        "se_nao": [
+          "motor ventilador defeituoso"
+        ]
+      },
+      {
+        "pergunta": "Sistema foi recarregado recentemente?",
+        "se_sim": [
+          "excesso de gás"
+        ]
+      }
+    ],
+    "verificacoes_rapidas": [
+      "limpar condensadora",
+      "verificar ventilador",
+      "medir pressão"
+    ]
+  },
+  {
+    "problema": "compressor trabalhando direto",
+    "categoria": "compressor",
+    "busca": [
+      "não desliga compressor",
+      "compressor direto",
+      "não para"
+    ],
+    "diagnostico_guiado": [
+      {
+        "pergunta": "Ambiente está muito quente ou grande?",
+        "se_sim": [
+          "carga térmica alta"
+        ]
+      },
+      {
+        "pergunta": "Sistema tem rendimento baixo?",
+        "se_sim": [
+          "falta de gás",
+          "baixo desempenho"
+        ]
+      },
+      {
+        "pergunta": "Sensor está correto?",
+        "se_nao": [
+          "sensor ambiente defeituoso"
+        ]
+      }
+    ],
+    "verificacoes_rapidas": [
+      "verificar ambiente",
+      "medir gás",
+      "testar sensor"
+    ]
+  },
+  {
+    "problema": "ciclo curto (liga e desliga rápido)",
+    "categoria": "compressor",
+    "busca": [
+      "ciclo curto",
+      "liga e desliga rápido",
+      "curto ciclo"
+    ],
+    "diagnostico_guiado": [
+      {
+        "pergunta": "Sensor está lendo corretamente?",
+        "se_nao": [
+          "sensor defeituoso"
+        ]
+      },
+      {
+        "pergunta": "Há proteção atuando?",
+        "se_sim": [
+          "alta pressão",
+          "baixa tensão"
+        ]
+      },
+      {
+        "pergunta": "Equipamento está superdimensionado?",
+        "se_sim": [
+          "ciclo rápido normal"
+        ]
+      }
+    ],
+    "verificacoes_rapidas": [
+      "observar tempo de ciclo",
+      "verificar sensor",
+      "medir pressão"
+    ]
+  },
+  {
+    "problema": "retorno de líquido no compressor",
+    "categoria": "refrigeração",
+    "busca": [
+      "retorno de líquido",
+      "compressor gelado",
+      "linha de sucção molhada"
+    ],
+    "diagnostico_guiado": [
+      {
+        "pergunta": "Evaporadora está congelando?",
+        "se_sim": [
+          "falta de gás",
+          "fluxo baixo"
+        ]
+      },
+      {
+        "pergunta": "Carga de gás está correta?",
+        "se_nao": [
+          "excesso de gás"
+        ]
+      },
+      {
+        "pergunta": "Superaquecimento está baixo?",
+        "se_sim": [
+          "retorno de líquido"
+        ]
+      }
+    ],
+    "verificacoes_rapidas": [
+      "medir superaquecimento",
+      "avaliar carga",
+      "verificar ventilação"
+    ]
+  },
+  {
+    "problema": "superaquecimento alto",
+    "categoria": "refrigeração",
+    "busca": [
+      "superaquecimento alto",
+      "superheat alto"
+    ],
+    "diagnostico_guiado": [
+      {
+        "pergunta": "Sistema com pouca carga?",
+        "se_sim": [
+          "falta de gás"
+        ]
+      },
+      {
+        "pergunta": "Evaporadora com fluxo bom?",
+        "se_nao": [
+          "restrição de ar"
+        ]
+      },
+      {
+        "pergunta": "Restrição no sistema?",
+        "se_sim": [
+          "capilar parcialmente entupido"
+        ]
+      }
+    ],
+    "verificacoes_rapidas": [
+      "medir superaquecimento",
+      "verificar gás",
+      "avaliar fluxo"
+    ]
+  },
+  {
+    "problema": "sub-resfriamento alto",
+    "categoria": "refrigeração",
+    "busca": [
+      "subresfriamento alto",
+      "subcool alto"
+    ],
+    "diagnostico_guiado": [
+      {
+        "pergunta": "Carga de gás está elevada?",
+        "se_sim": [
+          "excesso de gás"
+        ]
+      },
+      {
+        "pergunta": "Condensadora suja?",
+        "se_sim": [
+          "troca térmica ruim"
+        ]
+      },
+      {
+        "pergunta": "Restrição na linha?",
+        "se_sim": [
+          "filtro secador obstruído"
+        ]
+      }
+    ],
+    "verificacoes_rapidas": [
+      "medir subcool",
+      "limpar condensadora",
+      "verificar restrição"
+    ]
+  },
+  {
+    "problema": "sub-resfriamento baixo",
+    "categoria": "refrigeração",
+    "busca": [
+      "subresfriamento baixo",
+      "subcool baixo"
+    ],
+    "diagnostico_guiado": [
+      {
+        "pergunta": "Sistema com pouco gás?",
+        "se_sim": [
+          "falta de gás"
+        ]
+      },
+      {
+        "pergunta": "Há vazamento?",
+        "se_sim": [
+          "perda de carga"
+        ]
+      },
+      {
+        "pergunta": "Capacidade correta?",
+        "se_nao": [
+          "equipamento subdimensionado"
+        ]
+      }
+    ],
+    "verificacoes_rapidas": [
+      "medir subcool",
+      "procurar vazamento",
+      "corrigir carga"
+    ]
+  },
+  {
+    "problema": "compressor superaquece",
+    "categoria": "compressor",
+    "busca": [
+      "compressor quente",
+      "superaquecendo",
+      "proteção térmica"
+    ],
+    "diagnostico_guiado": [
+      {
+        "pergunta": "Ventilação da condensadora está boa?",
+        "se_nao": [
+          "ventilador defeituoso"
+        ]
+      },
+      {
+        "pergunta": "Sistema está com alta pressão?",
+        "se_sim": [
+          "excesso de gás"
+        ]
+      },
+      {
+        "pergunta": "Compressor está sobrecarregado?",
+        "se_sim": [
+          "problema interno"
+        ]
+      }
+    ],
+    "verificacoes_rapidas": [
+      "verificar ventilador",
+      "medir pressão",
+      "avaliar compressor"
+    ]
+  },
+  {
+    "problema": "baixa tensão na rede",
+    "categoria": "elétrica",
+    "busca": [
+      "baixa tensão",
+      "queda de tensão",
+      "energia fraca"
+    ],
+    "diagnostico_guiado": [
+      {
+        "pergunta": "Rede elétrica está estável?",
+        "se_nao": [
+          "queda de energia"
+        ]
+      },
+      {
+        "pergunta": "Fiação é adequada?",
+        "se_nao": [
+          "bitola incorreta"
+        ]
+      },
+      {
+        "pergunta": "Outros equipamentos afetam a rede?",
+        "se_sim": [
+          "sobrecarga elétrica"
+        ]
+      }
+    ],
+    "verificacoes_rapidas": [
+      "medir tensão",
+      "verificar fiação",
+      "avaliar carga elétrica"
+    ]
+  }
+]

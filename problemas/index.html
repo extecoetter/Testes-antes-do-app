@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problemas de Split</title>
+<style>
+body{
+  font-family:Arial, Helvetica, sans-serif;
+  background:#f3f6fb;
+  margin:0;
+  padding:20px;
+}
+.container{
+  max-width:980px;
+  margin:auto;
+  background:#fff;
+  padding:20px;
+  border-radius:14px;
+  box-shadow:0 5px 20px rgba(0,0,0,.1);
+}
+h1{
+  text-align:center;
+  margin-top:0;
+}
+label{
+  display:block;
+  margin-top:12px;
+  font-weight:bold;
+}
+input, select{
+  width:100%;
+  padding:11px;
+  margin-top:5px;
+  border-radius:8px;
+  border:1px solid #ccc;
+  box-sizing:border-box;
+}
+.grid{
+  display:grid;
+  grid-template-columns:1.4fr 1fr;
+  gap:12px;
+}
+@media (max-width:700px){
+  .grid{grid-template-columns:1fr;}
+}
+.topo{
+  font-size:13px;
+  color:#666;
+  margin-top:8px;
+}
+.result{
+  margin-top:18px;
+}
+.card{
+  background:#eaf2ff;
+  border-radius:10px;
+  padding:14px;
+  margin-bottom:14px;
+}
+.titulo{
+  font-size:22px;
+  font-weight:bold;
+  margin-bottom:8px;
+}
+.badges{
+  margin-bottom:10px;
+}
+.badge{
+  display:inline-block;
+  background:#fff;
+  border:1px solid #d8e5ff;
+  border-radius:999px;
+  padding:4px 8px;
+  font-size:12px;
+  margin-right:6px;
+  margin-bottom:6px;
+}
+.bloco{
+  margin-top:12px;
+}
+.bloco b{
+  display:block;
+  margin-bottom:6px;
+}
+.lista{
+  margin:0;
+  padding-left:18px;
+}
+.lista li{
+  margin-bottom:4px;
+}
+.pergunta{
+  background:#fff;
+  border:1px solid #d8e5ff;
+  border-radius:10px;
+  padding:10px;
+  margin-top:8px;
+}
+.pergunta-titulo{
+  font-weight:bold;
+  margin-bottom:6px;
+}
+.resposta{
+  margin-top:6px;
+}
+.muted{color:#666}
+small{color:#666}
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Problemas de Split</h1>
+
+  <div class="grid">
+    <div>
+      <label>Buscar problema</label>
+      <input id="busca" placeholder="Ex: pingando água, não gela, compressor não parte">
+    </div>
+    <div>
+      <label>Categoria</label>
+      <select id="categoria">
+        <option value="">Todas</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="topo" id="status">Carregando base...</div>
+  <div class="result" id="resultado"></div>
+</div>
+
+<script>
+let dados = [];
+
+function norm(v){
+  return String(v || "")
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .trim();
+}
+
+async function carregarBase(){
+  const arquivos = [
+    "problemas_split_modelo_inteligente_base_final.json",
+    "problemas_split_modelo_inteligente_v4.json",
+    "problemas_split_modelo_inteligente_v3.json"
+  ];
+
+  let ultimoErro = null;
+
+  for(const nome of arquivos){
+    try{
+      const resp = await fetch(`${nome}?v=${Date.now()}`, { cache: "no-store" });
+      if(!resp.ok) throw new Error(`Falha ao carregar ${nome}`);
+      const json = await resp.json();
+      if(Array.isArray(json) && json.length){
+        return json;
+      }
+    }catch(err){
+      ultimoErro = err;
+    }
+  }
+
+  throw ultimoErro || new Error("Nenhuma base válida encontrada");
+}
+
+function montarTextoBusca(item){
+  const partes = [
+    item.problema,
+    item.categoria,
+    ...(Array.isArray(item.busca) ? item.busca : []),
+    ...(Array.isArray(item.verificacoes_rapidas) ? item.verificacoes_rapidas : [])
+  ];
+
+  if(Array.isArray(item.diagnostico_guiado)){
+    item.diagnostico_guiado.forEach(d => {
+      if(d.pergunta) partes.push(d.pergunta);
+      if(Array.isArray(d.se_sim)) partes.push(...d.se_sim);
+      if(Array.isArray(d.se_nao)) partes.push(...d.se_nao);
+    });
+  }
+
+  return norm(partes.filter(Boolean).join(" "));
+}
+
+function score(item, termo){
+  if(!termo) return 1;
+
+  const t = norm(termo);
+  const problema = norm(item.problema || "");
+  const busca = Array.isArray(item.busca) ? item.busca.map(norm) : [];
+  const texto = montarTextoBusca(item);
+
+  if(problema === t) return 100;
+  if(busca.includes(t)) return 95;
+  if(problema.includes(t)) return 80;
+  if(texto.includes(t)) return 40;
+  return 0;
+}
+
+function listaHtml(arr){
+  if(!Array.isArray(arr) || !arr.length) return "";
+  return `<ul class="lista">${arr.map(v => `<li>${v}</li>`).join("")}</ul>`;
+}
+
+function diagnosticoHtml(lista){
+  if(!Array.isArray(lista) || !lista.length) return "";
+  return lista.map(item => {
+    const sim = Array.isArray(item.se_sim) && item.se_sim.length
+      ? `<div class="resposta"><b>Se SIM:</b>${listaHtml(item.se_sim)}</div>`
+      : "";
+    const nao = Array.isArray(item.se_nao) && item.se_nao.length
+      ? `<div class="resposta"><b>Se NÃO:</b>${listaHtml(item.se_nao)}</div>`
+      : "";
+
+    return `
+      <div class="pergunta">
+        <div class="pergunta-titulo">${item.pergunta || "-"}</div>
+        ${sim}
+        ${nao}
+      </div>
+    `;
+  }).join("");
+}
+
+function preencherCategorias(){
+  const sel = document.getElementById("categoria");
+  const categorias = [...new Set(dados.map(d => d.categoria).filter(Boolean))].sort((a,b)=>a.localeCompare(b,"pt-BR"));
+  sel.innerHTML = '<option value="">Todas</option>';
+  categorias.forEach(cat => {
+    const opt = document.createElement("option");
+    opt.value = cat;
+    opt.textContent = cat;
+    sel.appendChild(opt);
+  });
+}
+
+function buscar(){
+  const termo = document.getElementById("busca").value.trim();
+  const categoria = document.getElementById("categoria").value;
+
+  let lista = dados
+    .map(item => ({...item, _score: score(item, termo)}))
+    .filter(item => {
+      if(categoria && item.categoria !== categoria) return false;
+      if(termo && item._score === 0) return false;
+      return true;
+    })
+    .sort((a,b) => {
+      if(b._score !== a._score) return b._score - a._score;
+      if((a.categoria || "") !== (b.categoria || "")) return (a.categoria || "").localeCompare(b.categoria || "", "pt-BR");
+      return (a.problema || "").localeCompare(b.problema || "", "pt-BR");
+    });
+
+  if(!termo && !categoria){
+    lista = [];
+  }
+
+  mostrar(lista, termo, categoria);
+}
+
+function mostrar(lista, termo, categoria){
+  const div = document.getElementById("resultado");
+  const status = document.getElementById("status");
+
+  if(!termo && !categoria){
+    status.textContent = "Digite um problema ou filtre por categoria.";
+    div.innerHTML = '<div class="card muted">Exemplo: <b>pingando água</b>, <b>não gela</b>, <b>compressor não parte</b>.</div>';
+    return;
+  }
+
+  status.textContent = `${lista.length} resultado(s) encontrado(s)`;
+
+  if(!lista.length){
+    div.innerHTML = '<div class="card muted">Nenhum problema encontrado.</div>';
+    return;
+  }
+
+  div.innerHTML = "";
+
+  lista.slice(0, 50).forEach(e => {
+    const buscaRelacionada = Array.isArray(e.busca) && e.busca.length
+      ? `<div class="bloco"><b>Também pode ser buscado por</b><small>${e.busca.join(" • ")}</small></div>`
+      : "";
+
+    div.innerHTML += `
+      <div class="card">
+        <div class="titulo">${e.problema || "-"}</div>
+        <div class="badges">
+          <span class="badge">${e.categoria || "-"}</span>
+        </div>
+        ${buscaRelacionada}
+        <div class="bloco">
+          <b>Diagnóstico guiado</b>
+          ${diagnosticoHtml(e.diagnostico_guiado)}
+        </div>
+        <div class="bloco">
+          <b>Verificações rápidas</b>
+          ${listaHtml(e.verificacoes_rapidas)}
+        </div>
+      </div>
+    `;
+  });
+
+  if(lista.length > 50){
+    div.innerHTML += `<div class="card muted">Mostrando 50 resultados de ${lista.length}.</div>`;
+  }
+}
+
+async function iniciar(){
+  try{
+    dados = await carregarBase();
+    preencherCategorias();
+    document.getElementById("status").textContent = `${dados.length} problemas carregados`;
+    buscar();
+  }catch(err){
+    document.getElementById("status").textContent = "Erro ao carregar a base";
+    document.getElementById("resultado").innerHTML = `<div class="card muted">${err.message}</div>`;
+  }
+}
+
+document.getElementById("busca").addEventListener("input", buscar);
+document.getElementById("categoria").addEventListener("change", buscar);
+
+iniciar();
+</script>
+</body>
+</html>
