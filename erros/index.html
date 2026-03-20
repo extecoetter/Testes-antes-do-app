@@ -91,6 +91,12 @@ input, select{
   margin-bottom:4px;
 }
 .muted{color:#666}
+.acoes{margin-top:14px;display:flex;gap:10px;flex-wrap:wrap}
+.btn-ia{background:#0b5ed7;color:#fff;border:none;border-radius:10px;padding:11px 14px;font-weight:bold;cursor:pointer}
+.btn-ia[disabled]{opacity:.65;cursor:not-allowed}
+.card-ia{background:#fff7e8;border:1px solid #ffe2a8}
+.tag-ia{display:inline-block;background:#fff;border:1px solid #ffd37a;border-radius:999px;padding:4px 8px;font-size:12px;font-weight:bold;margin-bottom:8px}
+.aviso{margin-top:10px;font-size:13px;color:#555}
 </style>
 </head>
 <body>
@@ -120,10 +126,20 @@ input, select{
 
   <div class="topo" id="status">Carregando base...</div>
   <div class="result" id="resultado"></div>
+  <div class="acoes" id="acoes" style="display:none;">
+    <button id="btnIa" class="btn-ia" type="button">Ampliar pesquisa com IA</button>
+  </div>
+  <div class="aviso" id="statusIa" style="display:none;"></div>
 </div>
 
 <script>
 let dados = [];
+let ultimoContextoBusca = {
+  termo: "",
+  marca: "",
+  linha: "",
+  resultados: []
+};
 
 function norm(v){
   return String(v || "")
@@ -252,6 +268,7 @@ function buscar(){
     lista = [];
   }
 
+  ultimoContextoBusca = { termo, marca, linha, resultados: lista };
   mostrar(lista, termo, marca, linha);
 }
 
@@ -262,13 +279,15 @@ function mostrar(lista, termo, marca, linha){
   if(!termo && !marca && !linha){
     status.textContent = "Digite um código para ver todas as marcas e depois filtre por marca ou linha.";
     div.innerHTML = '<div class="card muted">Exemplo: digite <b>E1</b> para listar todos os E1 de todas as marcas.</div>';
+    mostrarBotaoIa(false);
     return;
   }
 
   status.textContent = `${lista.length} resultado(s) encontrado(s)`;
 
   if(!lista.length){
-    div.innerHTML = '<div class="card muted">Nenhum resultado encontrado.</div>';
+    div.innerHTML = '<div class="card muted">Nenhum resultado encontrado na base local.</div>';
+    mostrarBotaoIa(true);
     return;
   }
 
@@ -304,11 +323,14 @@ function mostrar(lista, termo, marca, linha){
   if(lista.length > 80){
     div.innerHTML += `<div class="card muted">Mostrando 80 resultados de ${lista.length}.</div>`;
   }
+
+  mostrarBotaoIa(true);
 }
 
 document.getElementById("busca").addEventListener("input", buscar);
 document.getElementById("marca").addEventListener("change", buscar);
 document.getElementById("linha").addEventListener("change", buscar);
+document.getElementById("btnIa").addEventListener("click", ampliarPesquisaComIa);
 
 carregar();
 </script>
